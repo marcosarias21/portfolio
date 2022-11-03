@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+nav {
+    div{
+      div{
+        div{
+          svg{
+            margin-right: 4px;
+          }
+          .nav-link {
+              font-weight: bold;
+              margin-right: 30px;
+              letter-spacing: 0.8px;
+          }
+        }
+      }
+    }
+}
+  
