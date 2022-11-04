@@ -4,7 +4,7 @@ import './description.scss';
 
 const Description = () => {
   return (
-    <div className="col-sm-6 col-md-6 desc-content">
+    <div className="col-sm-12 col-md-12 col-lg-6 desc-content">
       <h1>Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span></h1>
       <h2 className='my-4'> I'm <span className='text-primary'>Marcos Arias</span> from Argentina.</h2>
       <Typewriter
