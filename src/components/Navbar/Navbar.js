@@ -2,7 +2,7 @@ import './navbar.scss';
 import {
   BsStars, BsFillHouseDoorFill, BsCast, BsChat,
 } from 'react-icons/bs';
-import { AiOutlineUser } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className='nav-item'>
               <a className="nav-link" href="#">
-              <AiOutlineUser className='mb-1' />
+              <FaGithub />
                   About
               </a>
             </div>

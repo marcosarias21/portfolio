@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+.text-my-color{
+  color: $my-color;
+}
+.text-style{
+  text-align: justify;
+  color: gray;
+}
+.btn{
+  svg{
+    width: 40px;
+    height: 40px;
+  }
+}
