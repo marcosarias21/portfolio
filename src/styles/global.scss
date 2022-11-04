@@ -3,4 +3,8 @@ $my-color: #0d6efdd4;
 body {
   font-family: $font-family;
   letter-spacing: 0.8px;
+  .btn{
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
 }

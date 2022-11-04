@@ -1,10 +1,7 @@
-import image from '../../assets/images/image.gif';
-import imgLight from '../../assets/images/imgLight.gif';
-
-const Images = () => {
+const Images = ({ photo, className }) => {
   return (
     <div className="col-md-6">
-      <img src={imgLight} />
+      <img className={className} src={photo} />
     </div>
   );
 };
