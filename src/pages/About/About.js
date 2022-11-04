@@ -1,6 +1,8 @@
 import Container from '../../components/Container/Container';
 import WhoIm from '../../components/WhoIm/WhoIm';
 import Skills from '../../components/Skills/Skills';
+import picture from '../../assets/images/me.jpg';
+import Images from '../../components/Images/Images';
 import './about.scss';
 
 const About = () => {
@@ -9,8 +11,9 @@ const About = () => {
         <Container>
           <div className='container row align-items-center justify-content-center'>
             <WhoIm />
-            <hr className='mt-5'/>
-            <Skills />
+            <div className='text-center'>
+              <img className='img-size' src={picture} />
+            </div>
           </div>
         </Container>
       </section>
