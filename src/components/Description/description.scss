@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+div{
+  font-weight: 900;
+  .btn-primary{
+    background-color: $my-color;
+    border: 0px solid $my-color;
+  }
+  .Typewriter {
+    font-size: xx-large;
+    font-weight: bold;
+    color: $my-color;
+  }
+}

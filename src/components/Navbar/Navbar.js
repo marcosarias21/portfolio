@@ -3,10 +3,16 @@ import {
   BsStars, BsFillHouseDoorFill, BsCast, BsChat,
 } from 'react-icons/bs';
 import { AiOutlineUser } from 'react-icons/ai';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+
+  if (location.pathname === '/') {
+    return null;
+  }
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-light fixed-top">
       <div className="container container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
