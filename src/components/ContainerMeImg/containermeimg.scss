@@ -1,6 +1,4 @@
-@import '../../styles/global.scss';
-.bg-color-light{
-  
+@import '../../styles/global.scss';  
   .img-size{
     margin-top: 100px;
     border-radius: 50% !important;
@@ -8,13 +6,9 @@
     border-radius: 20px;
     box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.75);  
   }
-  background: url('../../assets/images/background.png');
-  background-position: 150%;
-  p{
-    color: $gray-color;
-    font-size: 20px;
-  }
-}
+  // // background: url('../../assets/images/background.png');
+  // background-position: 150%;
+
 
 
 @media (max-width: 420px) {
