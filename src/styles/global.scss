@@ -4,6 +4,11 @@ $gray-color: #6b7688;
 body {
   font-family: $font-family;
   letter-spacing: 0.8px;
+  p{
+    color: $gray-color;
+    font-size: 20px;
+  }
+
   .btn{
     letter-spacing: 1px;
     font-weight: bold;

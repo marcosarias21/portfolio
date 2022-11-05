@@ -1,13 +1,11 @@
-import Container from '../../components/Container/Container';
-import WhoIm from '../../components/WhoIm/WhoIm';
-import Skills from '../../components/Skills/Skills';
+import Container from '../Container/Container';
+import WhoIm from '../WhoIm/WhoIm';
 import picture from '../../assets/images/me.jpg';
-import Images from '../../components/Images/Images';
 import './about.scss';
 
 const About = () => {
   return (
-      <section className='bg-color-light'>
+      <div className='bg-color-light'>
         <Container>
           <div className='container row align-items-center justify-content-center'>
             <WhoIm />
@@ -16,7 +14,7 @@ const About = () => {
             </div>
           </div>
         </Container>
-      </section>
+      </div>
   );
 };
 
