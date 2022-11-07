@@ -1,33 +1,15 @@
 @import '../../styles/global.scss';
-.bg-color-light{
-  
-  .img-size{
-    margin-top: 100px;
-    border-radius: 50% !important;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.75);  
-  }
-  // background: url('../../assets/images/background.png');
-  background-position: 150%;
-  p{
-    color: $gray-color;
-    font-size: 20px;
-  }
+
+.text-my-color{
+  color: $my-color;
 }
-
-
-@media (max-width: 420px) {
-  .bg-color-light{
-    background-position: 96%;
-    .img-size{
-      height: 259px;
-    }
-  }
+.text-style{
+  text-align: justify;
+  color: gray;
 }
-
-@media (min-width: 600px) and (max-width: 1024px) {
-  .bg-color-light{
-    background-position: 96%;
+.btn{
+  svg{
+    width: 40px;
+    height: 40px;
   }
 }
