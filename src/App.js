@@ -6,11 +6,10 @@ import InitialPage from './pages/InitialPage/InitialPage';
 const App = () => {
   return (
     <>
-    <Navbar />
-    <Routes>
-      <Route path='' element={<InitialPage />} />
-      <Route path='/home' element={<Home />} />
-    </Routes>
+      <Routes>
+        <Route path='' element={<InitialPage />} />
+        <Route path='/home' element={<Home />} />
+      </Routes>
     </>
   );
 };

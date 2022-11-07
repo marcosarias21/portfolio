@@ -3,14 +3,8 @@ import {
   BsStars, BsFillHouseDoorFill, BsCast, BsChat,
 } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const location = useLocation();
-
-  if (location.pathname === '/') {
-    return null;
-  }
   return (
     <nav className="navbar navbar-expand-lg bg-light fixed-top">
       <div className="container container-fluid">
