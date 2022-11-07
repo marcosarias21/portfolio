@@ -2,75 +2,115 @@
 .color-pers{
   color: $my-color;
 }
-.skill {
-  padding: 0 0 50px 0;
-  position: relative;
-}
 
 .skillCard {
   transition: all 0.2s ease-in-out;
   border-radius: 3px;
   border: 0px;
-  
   &:hover {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
   }
+  
 }
 
 .htmlCard:hover {
-  box-shadow: rgba(240, 101, 41) 0px 3px 3px 0px;
+  box-shadow: $html-color 0px 3px 3px 0px;
+  color: $html-color;
 }
 .cssCard:hover {
-  box-shadow: rgba(41, 101, 241) 0px 3px 3px 0px;
+  box-shadow: $css-color 0px 3px 3px 0px;
+  color: $css-color;
 }
 .javascriptCard:hover {
-  box-shadow: rgba(240, 219, 79) 0px 3px 3px 0px;
+  box-shadow: $js-color 0px 3px 3px 0px;
+  color: $js-color;
 }
 .reactCard:hover {
-  box-shadow: rgba(97, 219, 251) 0px 3px 3px 0px;
+  box-shadow: $react-color 0px 3px 3px 0px;
+  color: $react-color;
 }
 .nodeCard:hover {
-  box-shadow: rgba(104, 160, 99) 0px 3px 3px 0px;
+  box-shadow: $node-color 0px 3px 3px 0px;
+  color: $node-color;
 }
 .expressCard:hover {
-  box-shadow: rgba(255, 255, 255) 0px 3px 3px 0px;
+  box-shadow: rgba(20, 20, 20, 0.685) 0px 3px 3px 0px;
+  opacity: $express-color;
 }
 .mongoCard:hover {
-  box-shadow: rgba(77, 179, 61) 0px 3px 3px 0px;
+  box-shadow: $mongo-color 0px 3px 3px 0px;
+  color: $mongo-color;
+}
+.firebaseCard:hover{
+  box-shadow: $firebase-color 0px 3px 3px 0px;
+  color: $firebase-color;
+}
+.sassCard:hover{
+  box-shadow: $sass-color 0px 3px 3px 0px;
+  color: $sass-color;
 }
 .gitCard:hover {
-  box-shadow: rgba(241, 80, 47) 0px 3px 3px 0px;
+  box-shadow: $git-color 0px 3px 3px 0px;
+  color: $git-color;
 }
 
-.skillIcon {
-  font-size: 4rem;
+@media (min-width: 300px) and (max-width: 450px){  
+  .skill-section-space{
+    max-width: 300px;
+    .skillCard{
+      margin-right: 10px;
+      font-size: 80px;
+      padding: 0px;
+      h5{        
+        display: none;
+      }
+    }
+  }
 }
 
-.skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+@media (min-width: 500px) and (max-width: 760px){  
+  .skill-section-space{
+    max-width: 100%;
+    .skillCard{
+      max-width: 110px;
+      margin-right: 10px;
+      font-size: 110px;
+      padding: 0px;
+    }
+  }
 }
-.skill h2 {
-  font-size: 45px;
-  font-weight: 700;
+@media (min-width: 761px) and (max-width: 1020px){  
+  .skill-section-space{
+    .skillCard{
+      max-width: 120px;
+      margin-right: 10px;
+      font-size: 120px;
+      padding: 0px;
+    }
+  }
 }
-.skill p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
+@media (min-width: 1024px) and (max-width: 1440px){  
+  .skill-section-space{
+    .skillCard{
+      margin-left: 10px;
+      max-width: 150px;
+      margin-right: 10px;
+      font-size: 150px;
+      padding: 0px;
+    }
+  }
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+@media (min-width: 1441px) and (max-width: 1921px){  
+  .skill-section-space{
+    max-width: 80%;
+    .skillCard{
+      margin-left: 10px;
+      max-width: 160px;
+      margin-right: 10px;
+      font-size: 160px;
+      padding: 0px;
+    }
+  }
 }
