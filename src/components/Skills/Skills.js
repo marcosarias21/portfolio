@@ -1,21 +1,25 @@
 import './skill.scss';
 import { dataSkills } from '../../helper/dataSkills';
+import Container from '../Container/Container';
 
 const Skills = () => {
   return (
-    <div className='col-12 pt-5 text-center'>
-      <h1 className='color-pers mt-3 mb-5'>My Skillset </h1>
-      <div className='d-flex flex-wrap justify-content-evenly mt-4 py-2'>
-        {dataSkills.map(({
-          iconClass, cardClass, id,
-        }) => {
-          return (
-        <div key={id} className={`skillCard ${cardClass} p-2`}>
-          <i className={`skillIcon ${iconClass}`}></i>
-        </div>);
-        })}
+    <Container>
+      <div className='d-flex flex-column align-items-center'>
+          <h1 className='mb-2 text-secondary'> My <span className='color-pers'>Skillset</span> </h1>
+          <div className='d-flex flex-wrap justify-content-center skill-section-space'>
+            {dataSkills.map(({
+              iconClass, title, cardClass, id,
+            }) => {
+              return (
+              <div key={id} className={`text-center skillCard ${cardClass}`}>
+                <i className={`skillIcon ${iconClass}`}></i>
+                <h5> {title} </h5>
+            </div>);
+            })}
+          </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
