@@ -1,8 +1,8 @@
 /* eslint-disable no-shadow */
-import './skill.scss';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Container } from '../Container';
 import { dataSkills } from '../../helper/dataSkills';
-import Container from '../Container/Container';
+import './skill.scss';
 
 const Skills = () => {
   return (

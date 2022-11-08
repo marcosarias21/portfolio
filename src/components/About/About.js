@@ -2,9 +2,9 @@
 import { motion } from 'framer-motion';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
-import Container from '../Container/Container';
-import ContainerMeImg from '../ContainerMeImg/ContainerMeImg';
-import Layout from '../Layout/Layout';
+import { Container } from '../Container';
+import { ContainerMeImg } from '../ContainerMeImg';
+import { Layout } from '../Layout';
 import './about.scss';
 
 const About = () => {

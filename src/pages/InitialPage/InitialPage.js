@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import BackgroundVideo from '../../components/BackgroundVideo/BackgroundVideo';
+import { BackgroundVideo } from '../../components/BackgroundVideo';
 import './initialpage.scss';
 
 const InitialPage = () => {

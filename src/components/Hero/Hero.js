@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import Container from '../Container/Container';
-import Images from '../Images/Images';
-import Layout from '../Layout/Layout';
+import { Container } from '../Container';
+import { Layout } from '../Layout';
+import { Images } from '../Images';
 import imgLight from '../../assets/images/imgLight.gif';
 import './hero.scss';
 

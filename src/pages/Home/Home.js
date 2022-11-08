@@ -1,15 +1,20 @@
-import Navbar from '../../components/Navbar/Navbar';
 import { About } from '../../components/About';
-import Skills from '../../components/Skills/Skills';
 import { Hero } from '../../components/Hero';
+import { Navbar } from '../../components/Navbar';
+import { Projects } from '../../components/Projects';
+import { Skills } from '../../components/Skills';
+import './home.scss';
 
 const Home = () => {
   return (
     <>
     <Navbar />
-    <Hero />
-    <About />
-    <Skills />
+    <section className='container-scroll'>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+    </section>
     </>
   );
 };
