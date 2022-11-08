@@ -1,0 +1,16 @@
+  /* Make sure there are no margins or padding on the body so container completely fills screen */  
+  
+  .container-scroll {
+  position:relative;
+  width:100vw;
+  height:100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
+  section{
+    scroll-snap-align: center;
+    } 
+  }  
+
+  
+
+   

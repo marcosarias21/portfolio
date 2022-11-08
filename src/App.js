@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import InitialPage from './pages/InitialPage/InitialPage';
+import { Home } from './pages/Home';
+import { InitialPage } from './pages/InitialPage';
 
 const App = () => {
   return (

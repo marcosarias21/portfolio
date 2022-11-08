@@ -1,4 +1,3 @@
-import React from 'react';
 import bgVideo from '../../assets/video/Letter - 18003.mp4';
 import './backgroundvideo.scss';
 
