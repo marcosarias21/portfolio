@@ -14,3 +14,8 @@
     color: $my-color;
   }
 }
+@media (min-width: 700px) and (max-width: 1920px){
+  .img-media-size{
+    width: 100%;
+  }
+}

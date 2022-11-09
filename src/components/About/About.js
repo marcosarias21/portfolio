@@ -19,7 +19,6 @@ const About = () => {
           className='fw-bold'>
           Who <span className='text-my-color'> I'm?</span>
           </motion.h2>
-          {/* Primero muestra el y who i am en animacion y dsp´un delay para mostrar lo otro */}
           <motion.p
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0, transition: { delay: 1, duration: 0.8 } }}
