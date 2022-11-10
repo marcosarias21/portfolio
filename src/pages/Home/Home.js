@@ -3,6 +3,7 @@ import { Hero } from '../../components/Hero';
 import { Navbar } from '../../components/Navbar';
 import { Projects } from '../../components/Projects';
 import { Skills } from '../../components/Skills';
+import { projects } from '../../helper/projects';
 import './home.scss';
 
 const Home = () => {
@@ -13,7 +14,9 @@ const Home = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <section className='container' id='project'>
+        {projects.map(project => <Projects key={project} {...project} />)}
+      </section>
     </section>
     </>
   );

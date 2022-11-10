@@ -1,5 +1,9 @@
 import clinicaimg from '../assets/images/clinicarc.png';
 import clinicaTwo from '../assets/images/clinicarctwo.png';
+import movieImg from '../assets/images/movie.png';
+import movieTwo from '../assets/images/movietwo.png';
+import weather from '../assets/images/weather.png';
+import weatherTwo from '../assets/images/weathertwo.png';
 
 export const projects = [
   {
@@ -15,18 +19,20 @@ export const projects = [
   },
   {
     id: 2,
-    image: '',
+    image: weather,
+    imageTwo: weatherTwo,
     title: 'Weather App',
-    description: 'Weather application made with the Weather API. Tools and libraries used: React Marquee, Context , Bootstrap, Axios, Eslint.',
+    description: 'Weather application made with the Weather API in which it shows a video depending on the weather. Tools and libraries used: React Marquee, Context, Bootstrap, Sass, Axios, Eslint.',
     status: 'Completed',
     github: 'https://github.com/marcosarias21/weather-app',
     demo: 'https://weather-app-ffdm.netlify.app',
   },
   {
     id: 3,
-    image: '',
+    image: movieImg,
+    imageTwo: movieTwo,
     title: 'MovieDB App',
-    description: 'Movies application made with the api provided by moviedb. In this project I learned how to use Framer-Motion and I tried to make the code as clean as possible. Tools and libraries used: Context , Bootstrap, Axios, Eslint, React Router Dom, Framer-Motion, Swiper Js',
+    description: 'Movies application made with the api provided by moviedb. In this project I learned how to use Framer-Motion and I tried to make the code as clean as possible. Tools and libraries used: Context, Sass, Bootstrap, Axios, Eslint, React Router Dom, Framer-Motion, Swiper Js.',
     status: 'In progress...',
     github: 'https://github.com/marcosarias21/moviedb-app',
     demo: '',
