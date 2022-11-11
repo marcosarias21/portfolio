@@ -5,9 +5,12 @@ import { Container } from '../Container';
 import { Layout } from '../Layout';
 import { Images } from '../Images';
 import imgLight from '../../assets/images/imgLight.gif';
+import imgDark from '../../assets/images/imageDark.gif';
 import './hero.scss';
+import { useThemeContext } from '../../provider/ThemeContext';
 
 const Hero = () => {
+  const theme = useThemeContext();
   return (
     <Container>
         <Layout>
@@ -40,7 +43,7 @@ const Hero = () => {
               Contact Me ➡
             </motion.button>
           </div>
-          <Images className='img-media-size' photo={imgLight}/>
+          <Images className='img-media-size' photo={ theme === 'light' ? imgLight : imgDark }/>
       </Layout>
     </Container>
   );

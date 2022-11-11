@@ -3,6 +3,7 @@ import {
   BsStars, BsFillHouseDoorFill, BsCast, BsChat,
 } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import { Switch } from '../Switch';
 
 const Navbar = () => {
   return (
@@ -44,6 +45,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <Switch />
       </div>
     </nav>
   );

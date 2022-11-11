@@ -1,5 +1,5 @@
-  /* Make sure there are no margins or padding on the body so container completely fills screen */  
-  
+@import '../../styles/global.scss';
+
   .container-scroll {
   position:relative;
   width:100vw;
@@ -8,8 +8,19 @@
   scroll-snap-type: y mandatory; 
   section{
     scroll-snap-align: center;
-    } 
+    }
   }  
+  .container-scroll-dark {
+    @extend .container-scroll;
+    background-color: $dark-mode-color;
+    color: #EFEFF1;
+    p{
+      color: #EFEFF1;
+    }
+    svg{
+      color: #EFEFF1
+    }
+  }
 
   
 

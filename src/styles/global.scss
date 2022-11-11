@@ -5,12 +5,17 @@ $html-color: #f06529;
 $css-color: #2965f1;
 $sass-color:#f881e4;
 $js-color:#f0db4f;
+$dark-mode-color: #0d1117;
 $react-color: #61dbfb;
 $node-color: #68a063;
 $express-color: 0.5;
 $mongo-color:#4db33d;
 $firebase-color:#e08814;
 $git-color: #f1502f;
+$width-of-switch: 3.5em;
+$height-of-switch: 2em;  
+$size-of-icon: 1.4em;
+$slider-offset: 0.3em;
 body {
   font-family: $font-family;
   letter-spacing: 0.8px;
