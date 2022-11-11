@@ -6,7 +6,8 @@
     border: 0px solid $my-color;
   }
   .img-media-size{
-    width: 100%;
+    height: 546px;
+    width: 546px;
   }
   .Typewriter {
     font-size: xx-large;
@@ -14,8 +15,16 @@
     color: $my-color;
   }
 }
-@media (min-width: 700px) and (max-width: 1920px){
+@media (min-width: 700px) and (max-width: 1420px){
   .img-media-size{
     width: 100%;
   }
 }
+
+@media (min-width: 1421PX) and (max-width: 1920PX){
+  .img-media-size{
+    height: 546px;
+    width: 546px;
+  }
+}
+
