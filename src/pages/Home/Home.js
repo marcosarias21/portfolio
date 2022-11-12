@@ -10,9 +10,8 @@ import './home.scss';
 const Home = () => {
   const theme = useThemeContext();
   return (
-    <>
-    <Navbar />
     <section className={theme === 'light' ? 'container-scroll' : 'container-scroll-dark'}>
+      <Navbar />
       <Hero />
       <About />
       <Skills />
@@ -20,7 +19,6 @@ const Home = () => {
         {projects.map(project => <Projects key={project} {...project} />)}
       </section>
     </section>
-    </>
   );
 };
 

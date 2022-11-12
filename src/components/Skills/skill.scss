@@ -13,7 +13,6 @@
   }
   
 }
-
 .htmlCard:hover {
   box-shadow: $html-color 0px 3px 3px 0px;
   color: $html-color;
@@ -36,7 +35,7 @@
 }
 .expressCard:hover {
   box-shadow: rgba(20, 20, 20, 0.685) 0px 3px 3px 0px;
-  opacity: $express-color;
+  color: gray;
 }
 .mongoCard:hover {
   box-shadow: $mongo-color 0px 3px 3px 0px;
@@ -54,6 +53,7 @@
   box-shadow: $git-color 0px 3px 3px 0px;
   color: $git-color;
 }
+
 
 @media (min-width: 300px) and (max-width: 450px){  
   .skill-section-space{
