@@ -10,13 +10,13 @@ const Projects = ({
   return (
       <div className='row justify-content-center'>
         <div className='col-6 mt-5 pt-5'>
-          <h2>{title}</h2>
+          <h2 className='title-projects'>{title}</h2>
           <p> {description} </p>
           {status === 'Completed' ? <p className='text-success'> <AiOutlineCheck/> Completed </p> : <p className='text-danger'> <AiOutlineClose /> In progress... </p>}
           <div>
-            <a target='blank' href={github} className='btn'> <FaGithub /> </a>
+            <a target='blank' href={github}><FaGithub className='svg-size' /></a>
             {githubBackend ? <a target='blank' href={githubBackend} className='btn'> Backend </a> : null }
-            <a target='blank' href={demo} className='btn'> <FaPager /> </a>
+            <a target='blank' href={demo}><FaPager className='svg-size text-danger ms-3' /></a>
           </div>
         </div>
         <div className='col-6 mt-5 pt-5'>

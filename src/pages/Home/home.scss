@@ -1,26 +1,25 @@
 @import '../../styles/global.scss';
 
   .container-scroll {
-  position:relative;
-  width:100vw;
-  height:100vh;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   transition: background-color 0.5s ease 0s;
   section{
     scroll-snap-align: center;
-    }
+  }
   }  
   .container-scroll-dark {
     @extend .container-scroll;
     background-color: $dark-mode-color;
     color: #EFEFF1;
+    a{
+      color: #EFEFF1;
+    }
     p{
       color: #EFEFF1;
     }
-    svg{
-      color: #EFEFF1
-    }
+
   }
 
   

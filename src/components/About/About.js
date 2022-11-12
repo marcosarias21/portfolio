@@ -1,13 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from 'framer-motion';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { useThemeContext } from '../../provider/ThemeContext';
 import { Container } from '../Container';
 import { ContainerMeImg } from '../ContainerMeImg';
 import { Layout } from '../Layout';
 import './about.scss';
 
 const About = () => {
+  const theme = useThemeContext();
   return (
     <Container>
       <Layout>
@@ -33,7 +35,7 @@ const About = () => {
             viewport={{ once: true }}>
             <a href="https://github.com/marcosarias21" className='btn'> <AiFillGithub /></a>
             <a href="https://www.linkedin.com/in/marcos-ar/" className='btn text-primary'> <FaLinkedinIn /></a>
-            <button className='btn btn-outline-primary '> Download CV </button>
+            <button className={theme === 'light' ? 'btn btn-outline-dark' : 'btn btn-outline-light'} > Download resume <AiOutlineDownload className='svg-size' /> </button>
           </motion.div>
         </div>
         <ContainerMeImg />
