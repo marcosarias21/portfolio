@@ -16,7 +16,7 @@ const Home = () => {
       <About />
       <Skills />
       <section className='container' id='project'>
-        {projects.map(project => <Projects key={project} {...project} />)}
+        {projects.map(project => <Projects key={project.id} {...project} />)}
       </section>
     </section>
   );
