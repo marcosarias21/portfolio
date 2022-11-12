@@ -35,7 +35,7 @@ const About = () => {
             viewport={{ once: true }}>
             <a href="https://github.com/marcosarias21" className='btn'> <AiFillGithub /></a>
             <a href="https://www.linkedin.com/in/marcos-ar/" className='btn text-primary'> <FaLinkedinIn /></a>
-            <button className={theme === 'light' ? 'btn btn-outline-dark' : 'btn btn-outline-light'} > Download resume <AiOutlineDownload className='svg-size' /> </button>
+            <button className={theme === 'light' ? 'btn btn-outline-secondary' : 'btn btn-outline-light'} > Download resume <AiOutlineDownload className='svg-size' /> </button>
           </motion.div>
         </div>
         <ContainerMeImg />
