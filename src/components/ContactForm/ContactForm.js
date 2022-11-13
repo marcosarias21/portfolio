@@ -1,12 +1,14 @@
-import React from 'react';
-import { AiFillFileText, AiOutlineMail } from 'react-icons/ai';
-import { BsCart, BsTextCenter } from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsTextCenter } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
-import { Container } from '../Container';
-import { Layout } from '../Layout';
+import { useThemeContext } from '../../provider/ThemeContext';
+import { Button } from '../Button';
+
 import './contactform.scss';
 
 const ContactForm = () => {
+  const theme = useThemeContext();
+  const styleForm = theme === 'dark' && 'form-control dark-form';
   return (
       <section className='container mt-5 pt-5 d-flex align-items-center justify-content-center'>
         <form className='form col-6 text-center'>
@@ -23,7 +25,7 @@ const ContactForm = () => {
             <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
             <label htmlFor="floatingPassword"><BsTextCenter /> Message... </label>
           </div>
-          <button className='btn btn-primary my-3'> Submit </button>
+          <Button text='Submit' />
         </form>
       </section>
 
