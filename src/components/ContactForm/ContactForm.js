@@ -11,7 +11,6 @@ const ContactForm = () => {
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const userKey = process.env.REACT_APP_USER_KEY;
   const [showAlert, setShowAlert] = useState(false);
-  console.log(userKey);
   const form = useRef();
 
   const sendEmail = (e) => {
