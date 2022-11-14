@@ -1,14 +1,11 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTextCenter } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
-import { useThemeContext } from '../../provider/ThemeContext';
 import { Button } from '../Button';
 
 import './contactform.scss';
 
 const ContactForm = () => {
-  const theme = useThemeContext();
-  const styleForm = theme === 'dark' && 'form-control dark-form';
   return (
       <section className='container mt-5 pt-5 d-flex align-items-center justify-content-center'>
         <form className='form col-6 text-center'>
