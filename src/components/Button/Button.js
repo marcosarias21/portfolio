@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
 import './button.scss';
 
-const Button = ({ text }) => {
+const Button = ({ text, type, value }) => {
   return (
     <motion.button
       initial={{ opacity: 0, x: -200 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.2, duration: 0.5 }}
-      className='button-animated mt-4 py-3 px-4'>
+      className='button-animated mt-4 py-3 px-4'
+      type={type}
+      value={value}
+      >
       <div className="svg-wrapper-1" >
         <div className="svg-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
