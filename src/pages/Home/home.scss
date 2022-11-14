@@ -8,6 +8,9 @@
   section{
     scroll-snap-align: center;
   }
+  .scroll-project{
+    scroll-margin: 362px;
+  }
   }  
   .container-scroll-dark {
     @extend .container-scroll;
