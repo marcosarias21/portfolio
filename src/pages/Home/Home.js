@@ -17,6 +17,7 @@ const Home = () => {
       <About />
       <Skills />
       <section className='container' id='project'>
+        <h2 className='text-center color-pers'>Projects</h2>
         {projects.map(project => <Projects key={project.id} {...project} />)}
       </section>
       <ContactForm />
