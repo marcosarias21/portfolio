@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
   return (
       <section className='container mt-5 pt-5 d-flex align-items-center justify-content-center'>
-        <form ref={form} onSubmit={sendEmail} className='form col-6 text-center'>
+        <form ref={form} onSubmit={sendEmail} className='form col-12 col-md-8 col-lg-7 text-center'>
           <h2 className='text-center py-3 text-primary'>Contact Me!</h2>
           <div className="form-floating mb-3">
             <input type="text" className="form-control" id="floatingInput" name="user_name" placeholder="Name..." required />
