@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useState } from 'react';
-import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineCheck, AiOutlineClose, AiOutlineDatabase } from 'react-icons/ai';
 import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
 
@@ -18,13 +18,15 @@ const Projects = ({
     })} onMouseEnter={() => setOpacity(true)} onMouseLeave={() => setOpacity(false)}>
       <div className='row justify-content-center mb-4 mt-5'>
         <div className='col-sm-12 col-md-6 col-lg-6 ps-4'>
-          <h2 className='title-projects'>{title}</h2>
+          <h2>{title}</h2>
           <p> {description} </p>
-          {status === 'Completed' ? <p className='text-success'> <AiOutlineCheck/> Completed </p> : <p className='text-danger'> <AiOutlineClose /> In progress... </p>}
+          <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> <AiOutlineCheck/> Completed </span> : <span className='text-danger'> <AiOutlineClose /> In progress... </span>}
+
+          </p>
           <div>
             <a target='blank' href={github}><FaGithub className='svg-size' /></a>
-            {githubBackend ? <a target='blank' href={githubBackend} className='btn'> Backend </a> : null }
-            <a target='blank' href={demo}><FaPager className='svg-size text-danger ms-3' /></a>
+            {githubBackend ? <a target='blank' href={githubBackend} className='btn'> <AiOutlineDatabase /> </a> : null }
+            <a target='blank' href={demo}><FaPager className='svg-size text-danger' /></a>
           </div>
         </div>
         <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
