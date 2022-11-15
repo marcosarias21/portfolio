@@ -17,7 +17,7 @@ const Projects = ({
       'container-blur': opacity === false,
     })} onMouseEnter={() => setOpacity(true)} onMouseLeave={() => setOpacity(false)}>
       <div className='row justify-content-center mb-4 mt-5'>
-        <div className='col-sm-12 col-md-12 col-lg-6 ps-4'>
+        <div className='col-sm-12 col-md-6 col-lg-6 ps-4'>
           <h2 className='title-projects'>{title}</h2>
           <p> {description} </p>
           {status === 'Completed' ? <p className='text-success'> <AiOutlineCheck/> Completed </p> : <p className='text-danger'> <AiOutlineClose /> In progress... </p>}
@@ -27,7 +27,7 @@ const Projects = ({
             <a target='blank' href={demo}><FaPager className='svg-size text-danger ms-3' /></a>
           </div>
         </div>
-        <div className='d-none d-sm-block d-sm-none d-md-block col-md-12 col-lg-6'>
+        <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
           <a target='blank' href={demo}>
           <img className='img-project-size' onMouseEnter={() => setIsEnter(false)} onMouseLeave={() => setIsEnter(true)} src={isEnter ? image : imageTwo} />
           </a>
