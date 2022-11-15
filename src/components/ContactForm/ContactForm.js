@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsTextCenter } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
+import { BsFileEarmarkArrowDown, BsTextCenter } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
 import { Button } from '../Button';
 import './contactform.scss';
@@ -10,7 +10,7 @@ const ContactForm = () => {
   const serviceKey = process.env.REACT_APP_SERVICE_ID;
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const userKey = process.env.REACT_APP_USER_KEY;
-  const [showAlert, setShowAlert] = useState(false);
+  const [showAlert, setShowAlert] = useState(true);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,7 +21,6 @@ const ContactForm = () => {
         console.log(result.text);
         setShowAlert(true);
         form.current.reset();
-        window.location.href = '';
       }, (error) => {
         console.log(error.text);
       });
@@ -44,7 +43,9 @@ const ContactForm = () => {
           </div>
           <Button type="submit" value="Send" text='Submit' />
           {showAlert
-            ? (<div className="alert alert-success" role="alert"> Your message has been sent successfully! </div>
+            ? (<div className="alert alert-success" role="alert"> Your message has been sent successfully!
+              <button onClick={() => setShowAlert(false)} className='btn text-success mb-1'><AiOutlineClose /> </button>
+            </div>
             ) : ('')}
         </form>
       </section>
