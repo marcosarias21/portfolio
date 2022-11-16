@@ -1,4 +1,5 @@
 @import '../../styles/global.scss';
+
 .container-blur{
   padding: 0;
   margin: 0;
@@ -10,18 +11,24 @@
       box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
       border-radius: 10px;
       transition:  0.5s ease-in-out 0s;
-  }
-}
-.title-projects{
-  color: $my-color;
-}
-.svg-size{
-  color: black;
-  width: 35px;
-  height: 35px;
-}
-.img-project-size{
-  width: 100%;
-  border-radius: 0px 10px 10px 0px;
-  cursor: pointer;
+
+    }
+    .title-projects{
+      color: $my-color;
+    }
+    
+    a{
+      text-decoration: none;
+      .svg-size{
+        color: black;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .img-project-size{
+      width: 100%;
+      border-radius: 0px 10px 10px 0px;
+      cursor: pointer;
+      height: 100%;
+    }
 }

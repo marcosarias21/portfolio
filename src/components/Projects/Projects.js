@@ -19,14 +19,13 @@ const Projects = ({
       <div className='row justify-content-center mb-4 mt-5'>
         <div className='col-sm-12 col-md-6 col-lg-6 ps-4'>
           <h2>{title}</h2>
-          <p> {description} </p>
-          <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> <AiOutlineCheck/> Completed </span> : <span className='text-danger'> <AiOutlineClose /> In progress... </span>}
-
+          <p>{description}</p>
+          <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
           </p>
           <div>
             <a target='blank' href={github}><FaGithub className='svg-size' /></a>
-            {githubBackend ? <a target='blank' href={githubBackend} className='btn'> <AiOutlineDatabase /> </a> : null }
-            <a target='blank' href={demo}><FaPager className='svg-size text-danger' /></a>
+            {githubBackend ? <a target='blank' href={githubBackend}> <AiOutlineDatabase className='svg-size' /></a> : null }
+            <a target='blank' href={demo}><FaPager className='ms-2 svg-size text-danger' /></a>
           </div>
         </div>
         <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
