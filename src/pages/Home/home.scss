@@ -15,18 +15,18 @@
   .container-scroll-dark {
     @extend .container-scroll;
     background-color: $dark-mode-color;
-    color: #EFEFF1;
+    color: $text-color-darkmode;
     a{
-      color: #EFEFF1;
+      color: $text-color-darkmode;
     }
     p{
-      color: #EFEFF1;
+      color: $text-color-darkmode;
     }
 
     input {
       outline: none;
       transition: background-color 0.5s ease 0s;
-      color: #EFEFF1;
+      color: $text-color-darkmode;
       background-color: inherit;
     }
     label{
@@ -36,6 +36,9 @@
     textarea{
       transition: background-color 0.5s ease 0s;
       background-color: inherit;
+    }
+    .svg-size{
+      color: $text-color-darkmode;
     }
 
   }

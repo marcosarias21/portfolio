@@ -15,7 +15,6 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm(serviceKey, templateKey, form.current, userKey)
       .then((result) => {
         console.log(result.text);
@@ -46,7 +45,7 @@ const ContactForm = () => {
             ? (<div className="alert alert-success" role="alert"> Your message has been sent successfully!
               <button onClick={() => setShowAlert(false)} className='btn text-success mb-1'><AiOutlineClose /> </button>
             </div>
-            ) : ('')}
+            ) : null }
         </form>
       </section>
 
