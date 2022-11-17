@@ -1,5 +1,5 @@
 $font-family: 'Centra', 'Roboto', sans-serif;
-$my-color: #0d6efdd4;
+$my-color: #0d6dfd;
 $gray-color: #6b7688;
 $html-color: #f06529;
 $css-color: #2965f1;
@@ -22,10 +22,9 @@ body {
   margin:0;
   padding:0;
   overflow:hidden;
-  p{
+    p{
     color: $gray-color;
   }
-
   .btn{
     letter-spacing: 1px;
     font-weight: bold;
