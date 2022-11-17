@@ -1,21 +1,41 @@
 @import '../../styles/global.scss';
 
 nav {
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #cfcdd3;
-    div{
-      div{
-        div{
-          svg{
-            margin-right: 4px;
-          }
-          .nav-link {
-              font-weight: bold;
-              margin-right: 30px;
-              letter-spacing: 0.8px;
+  width: 220px;
+  height: 100vh;
+  background: inherit;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: center ;
+  background-color: $my-color ;
+  div{  
+      svg{
+        font-size: 25px;
+        margin-right: 10px;
+      }
+      a{
+        display: none;
+      }    
+        .nav-link {
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          color: white;
+          font-weight: bold;
+          margin-right: 30px;
+          letter-spacing: 0.8px; 
+          border-radius: 10px;
+          padding: 10px 20px;
+          transition-duration: 0.25s;
+          &:hover{
+              background-color: #6994e4;
+              color: white;
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+            }
           }
         }
       }
-    }
-}
+    
+
   

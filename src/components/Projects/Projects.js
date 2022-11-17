@@ -1,23 +1,35 @@
-import classNames from 'classnames';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { AiOutlineCheck, AiOutlineClose, AiOutlineDatabase } from 'react-icons/ai';
+import { AiOutlineDatabase } from 'react-icons/ai';
 import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
 
 const Projects = ({
-  title, description, githubBackend, github, demo, image, imageTwo, status,
+  title, description, githubBackend, github, demo, image, imageTwo, status, id,
 }) => {
+  const variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.6,
+        duration: 1,
+      },
+    },
+  };
   const [isEnter, setIsEnter] = useState(true);
-  const [opacity, setOpacity] = useState(false);
-  console.log(opacity);
-
   return (
-    <div className={classNames({
-      'container-blur active': opacity === true,
-      'container-blur': opacity === false,
-    })} onMouseEnter={() => setOpacity(true)} onMouseLeave={() => setOpacity(false)}>
-      <div className='row justify-content-center mb-4 mt-5'>
-        <div className='col-sm-12 col-md-6 col-lg-6 ps-4'>
+    <div className='container-blur mt-2'>
+      <div className='row justify-content-center'>
+        <motion.div
+        key={id}
+        variants={variants}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+        className='col-sm-12 col-md-6 col-lg-6 ps-4'>
           <h2>{title}</h2>
           <p>{description}</p>
           <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
@@ -27,12 +39,12 @@ const Projects = ({
             {githubBackend ? <a target='blank' href={githubBackend}> <AiOutlineDatabase className='svg-size' /></a> : null }
             <a target='blank' href={demo}><FaPager className='ms-2 svg-size text-danger' /></a>
           </div>
-        </div>
-        <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
+        </motion.div>
+        <motion.div variants={variants} initial='hidden' whileInView='visible' viewport={{ once: true }} className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
           <a target='blank' href={demo}>
           <img className='img-project-size' onMouseEnter={() => setIsEnter(false)} onMouseLeave={() => setIsEnter(true)} src={isEnter ? image : imageTwo} />
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

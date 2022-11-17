@@ -3,13 +3,13 @@
   .container-scroll {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   transition: background-color 0.5s ease 0s;
-  section{
-    scroll-snap-align: center;
-  }
+  background-color: #f7f7f7;
   .scroll-project{
-    scroll-margin: 362px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   }  
   .container-scroll-dark {
@@ -43,6 +43,19 @@
 
   }
 
-  
+  @media (max-width: 850px) {
+    .container-scroll{
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+    section{
+      scroll-snap-align: center;
+    }
+    .scroll-project{
+      scroll-margin: 300px;
+    }
+}
+
 
    
