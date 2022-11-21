@@ -1,34 +1,20 @@
 @import '../../styles/global.scss';
 
-.container-blur{
-  padding: 0;
-  background-color: white;
-  border-radius: 10px;
-  margin: 0;
-  opacity: 1;
-  border: 1px solid #eee;
-  transition: opacity 0.5s ease-in-out 0s;
-  &:hover {
-    @extend .container-blur;      
-      box-shadow: 1px 3px 13px 0px rgba(0,0,0,0.75);
-      transition:  0.5s ease-in-out 0s;
+  .title-projects{
+    color: $my-color;
+  }
+  
+  a{
+    text-decoration: none;
+    .svg-size{
+      color: black;
+      width: 35px;
+      height: 35px;
     }
-    .title-projects{
-      color: $my-color;
-    }
-    
-    a{
-      text-decoration: none;
-      .svg-size{
-        color: black;
-        width: 35px;
-        height: 35px;
-      }
-    }
-    .img-project-size{
-      width: 100%;
-      border-radius: 0px 5px 5px 0px;
-      cursor: pointer;
-      height: 100%;
-    }
-}
+  }
+  .img-project-size{
+    width: 100%;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    height: 100%;
+  }
