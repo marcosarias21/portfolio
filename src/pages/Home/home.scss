@@ -5,6 +5,12 @@
   scroll-behavior: smooth;
   transition: background-color 0.5s ease 0s;
   background-color: #f7f7f7;
+  .outer-wrapper{
+    margin-left: 90px;
+    .inner-wrapper{
+      padding: 0 33px;
+    }
+  }
   .scroll-project{
     align-items: center;
     display: flex;

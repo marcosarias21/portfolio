@@ -12,15 +12,19 @@ const Home = () => {
   const theme = useThemeContext();
   return (
     <section className={theme === 'light' ? 'container-scroll' : 'container-scroll-dark'}>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <section className='container scroll-project' id='project'>
-        <h2 className='text-center color-title'>Projects</h2>
-        {projects.map(project => <Projects key={project.id} {...project} />)}
-      </section>
-      <ContactForm />
+        <Navbar />
+      <div className='outer-wrapper'>
+        <div className='inner-wrapper'>
+          <Hero />
+          <About />
+          <Skills />
+          <section className='container scroll-project' id='project'>
+            <h2 className='text-center color-title'>Projects</h2>
+            {projects.map(project => <Projects key={project.id} {...project} />)}
+          </section>
+          <ContactForm />
+        </div>
+      </div>
     </section>
   );
 };
