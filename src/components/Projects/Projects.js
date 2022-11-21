@@ -22,14 +22,14 @@ const Projects = ({
   const [isEnter, setIsEnter] = useState(true);
   return (
     <div className='container-blur mt-2'>
-      <div className='row justify-content-center'>
+    <div className='row justify-content-center'>
         <motion.div
         key={id}
         variants={variants}
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true }}
-        className='col-sm-12 col-md-6 col-lg-6 ps-4'>
+        className='col-sm-12 col-md-6 col-lg-4'>
           <h2>{title}</h2>
           <p>{description}</p>
           <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
@@ -40,7 +40,7 @@ const Projects = ({
             <a target='blank' href={demo}><FaPager className='ms-2 svg-size text-danger' /></a>
           </div>
         </motion.div>
-        <motion.div variants={variants} initial='hidden' whileInView='visible' viewport={{ once: true }} className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
+        <motion.div variants={variants} initial='hidden' whileInView='visible' viewport={{ once: true }} className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-5'>
           <a target='blank' href={demo}>
           <img className='img-project-size' onMouseEnter={() => setIsEnter(false)} onMouseLeave={() => setIsEnter(true)} src={isEnter ? image : imageTwo} />
           </a>

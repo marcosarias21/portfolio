@@ -12,12 +12,12 @@ const Navbar = () => {
         <div>
           <h1 className='fw-bold'>hola</h1>
         </div>
-        <div className='nav-item'>
-          <a className="nav-link" aria-current="page" href="#"><BsFillHouseDoorFill className='mb-1' />Home</a>
-          <a className="nav-link" href="#"><FaGithub />About</a>
-          <a className="nav-link" href="#"><BsStars className='mb-1' />Skills</a>
-          <a className="nav-link"><BsCast className='mb-1' />Projects</a>
-          <a className="nav-link"><BsChat className='mb-1' />Contact</a>
+        <div className='nav-item d-flex flex-column align-items-center'>
+          <a className="nav-link" aria-current="page" href="#"><BsFillHouseDoorFill className='mb-1' /><span>Home</span></a>
+          <a className="nav-link" href="#"><FaGithub /><span>About</span></a>
+          <a className="nav-link" href="#"><BsStars className='mb-1' /><span>Skills</span></a>
+          <a className="nav-link"><BsCast className='mb-1' /><span>Projects</span></a>
+          <a className="nav-link"><BsChat className='mb-1' /><span>Contact</span></a>
         </div>
         <div>
           <Switch />
