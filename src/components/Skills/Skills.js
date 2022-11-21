@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <Container>
       <div className='d-flex flex-column align-items-center'>
-          <h2 className='mb-2'> My <span className='color-pers'>Skillset</span> </h2>
+          <h2 className='mb-2 color-title'> My Skillset</h2>
           <div className='d-flex flex-wrap justify-content-center skill-section-space'>
             <AnimatePresence>
               {dataSkills.map(({
