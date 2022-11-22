@@ -20,7 +20,9 @@ const Home = () => {
           <Skills />
           <section className='container scroll-project' id='project'>
             <h2 className='text-center color-title'>Projects</h2>
-            {projects.map(project => <Projects key={project.id} {...project} />)}
+            <div className='d-flex flex-column'>
+              {projects.map(project => <Projects key={project.id} {...project} />)}
+            </div>
           </section>
           <ContactForm />
         </div>
