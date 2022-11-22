@@ -27,7 +27,7 @@ const About = () => {
           viewport={{ once: true }}
           className='text-style my-5'>
             Web developer apassionate who enjoys being challenged and participating in projects
-            that require me to work outside of my comfort zone to grow more and more each day
+            that require me to work outside of my comfort zone to grow more and more each day.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -80 }}

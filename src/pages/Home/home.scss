@@ -1,6 +1,7 @@
 @import '../../styles/global.scss';
 
   .container-scroll {
+  position: relative;
   overflow-y: scroll;
   scroll-behavior: smooth;
   transition: background-color 0.5s ease 0s;
@@ -9,9 +10,13 @@
     margin-left: 90px;
     .inner-wrapper{
       padding: 0 33px;
+      max-width: 1140px;
+      margin: 0 auto;
     }
   }
   .scroll-project{
+    height: 100%;
+    padding: 20px 40px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -56,16 +61,24 @@
 
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 990px) {
     .container-scroll{
       overflow-y: scroll;
       scroll-behavior: smooth;
-      scroll-snap-type: y mandatory;
+      .outer-wrapper{
+        margin-left: 0px;
+        .inner-wrapper{
+          padding: 0px;
+        }
+      }
     }
     section{
       scroll-snap-align: center;
     }
     .scroll-project{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
       scroll-margin: 300px;
     }
 }
