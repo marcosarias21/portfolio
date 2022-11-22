@@ -21,7 +21,7 @@ const Projects = ({
   };
   const [isEnter, setIsEnter] = useState(true);
   return (
-    <div className='row justify-content-center mb-2 p-3 border-section'>
+    <div className='row justify-content-center mb-5 p-3 border-section'>
         <motion.div
         key={id}
         variants={variants}
@@ -29,7 +29,7 @@ const Projects = ({
         whileInView='visible'
         viewport={{ once: true }}
         className='col-sm-12 col-md-6 col-lg-6'>
-          <h2>{title}</h2>
+          <h3>{title}</h3>
           <p>{description}</p>
           <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
           </p>
