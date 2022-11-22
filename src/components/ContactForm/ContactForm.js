@@ -24,31 +24,33 @@ const ContactForm = () => {
         console.log(error.text);
       });
   };
+
   return (
-      <section className='container mt-5 pt-5 d-flex align-items-center justify-content-center'>
-        <form ref={form} onSubmit={sendEmail} className='form col-12 col-md-8 col-lg-7 text-center'>
-          <h2 className='text-center py-3 text-primary'>Contact Me!</h2>
-          <div className="form-floating mb-3">
+    <section className='form-margin'>
+      <h2 className='my-5'>Contact Me!</h2>
+      <div className='container bg-form-style d-flex flex-column align-items-center'>
+        <form ref={form} onSubmit={sendEmail} className='form row text-center'>
+          <div className="form-floating mb-4 col-6">
             <input type="text" className="form-control" id="floatingInput" name="user_name" placeholder="Name..." required />
             <label htmlFor="floatingInput"><FaUser /> Name</label>
           </div>
-          <div className="form-floating mb-3">
+          <div className="form-floating col-6">
             <input type="email" className="form-control" id="floatingEmail" name="user_email" placeholder="Email" required />
             <label htmlFor="floatingPassword"><AiOutlineMail /> Email </label>
           </div>
-          <div className="form-floating">
+          <div className="form-floating col-12">
             <textarea className="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
             <label htmlFor="floatingPassword"><BsTextCenter /> Message... </label>
           </div>
-          <Button type="submit" value="Send" text='Submit' />
+        </form>
+          <Button className='mb-4' type="submit" value="Send" text='Submit' />
           {showAlert
             ? (<div className="alert alert-success" role="alert"> Your message has been sent successfully!
               <button onClick={() => setShowAlert(false)} className='btn text-success mb-1'><AiOutlineClose /> </button>
             </div>
             ) : null }
-        </form>
-      </section>
-
+      </div>
+    </section>
   );
 };
 

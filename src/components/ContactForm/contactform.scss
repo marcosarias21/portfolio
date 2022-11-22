@@ -1,7 +1,9 @@
 @import '../../styles/global.scss';
-
+.bg-form-style{
+  background: white;
+  height: auto;
+  border-radius: 50px;
 .form{
-  border: 2px solid #dee2e683;
   border-radius: 10px;
   padding: 20px;
   .form-control{
@@ -10,4 +12,5 @@
      box-shadow: none;
     }
    }
+}
 }

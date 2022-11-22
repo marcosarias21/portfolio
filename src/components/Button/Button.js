@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 import './button.scss';
 
-const Button = ({ text, type, value }) => {
+const Button = ({
+  text, type, value, className,
+}) => {
   return (
     <motion.button
       initial={{ opacity: 0, x: -200 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.2, duration: 0.5 }}
-      className='button-animated mt-4 py-3 px-4'
+      className={`button-animated mt-4 py-3 px-4 ${className}`}
       type={type}
       value={value}
       >
