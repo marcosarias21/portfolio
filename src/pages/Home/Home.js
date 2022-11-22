@@ -18,10 +18,12 @@ const Home = () => {
           <Hero />
           <About />
           <Skills />
-          <section className='container scroll-project' id='project'>
-            <h2 className='text-center color-title'>Projects</h2>
-            <div className='d-flex flex-column'>
-              {projects.map(project => <Projects key={project.id} {...project} />)}
+          <section>
+            <h2 className='color-title mb-5'>Projects</h2>
+            <div className='container scroll-project' id='project'>
+              <div className='d-flex flex-column'>
+                {projects.map(project => <Projects key={project.id} {...project} />)}
+              </div>
             </div>
           </section>
           <ContactForm />
