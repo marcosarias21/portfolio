@@ -52,8 +52,25 @@
   color: $git-color;
 }
 
+@media (max-width: 359px) {
+  .skill-section-space{
+    max-width: 100%;
+    .skillCard{
+      width: 100px;
+      margin: 10px;
+      padding: 0px;
+      .skillIcon{
+        font-size: 80px;
+      }
+    }
+    h5{
+      display: none;
+    }
+  }
+}
 
-@media (min-width: 300px) and (max-width: 450px){  
+
+@media (min-width: 360px) and (max-width: 450px){  
   .skill-section-space{
     max-width: 100%;
     .skillCard{

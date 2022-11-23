@@ -2,8 +2,6 @@
 
   .container-scroll {
   position: relative;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   transition: background-color 0.5s ease 0s;
   background-color: #f7f7f7;
   .outer-wrapper{
@@ -14,8 +12,8 @@
       margin: 0 auto;
     }
   }
-  .scroll-project{
-    padding: 31px 40px;
+  .scroll-project{   
+    padding: 48px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -61,6 +59,17 @@
       color: $text-color-darkmode;
     }
 
+  }
+
+  
+  @media (min-width: 300px) and (max-width:359px) {
+    .container-scroll{
+      margin-bottom: 100px;
+      .scroll-project {
+        padding: 0;
+        background-color: inherit;
+      }
+    }
   }
 
   @media (max-width: 990px) {
