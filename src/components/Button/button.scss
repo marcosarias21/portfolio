@@ -9,6 +9,9 @@
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.2s;
+  &:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  }
   span {
     display: block;
     margin-left: 0.3em;

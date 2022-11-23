@@ -20,7 +20,7 @@ const Home = () => {
           <Skills />
           <section>
             <h2 className='color-title mb-5'>Projects</h2>
-            <div className='container scroll-project' id='project'>
+            <div className='scroll-project' id='project'>
               <div className='d-flex flex-column'>
                 {projects.map(project => <Projects key={project.id} {...project} />)}
               </div>

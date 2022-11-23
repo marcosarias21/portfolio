@@ -1,31 +1,34 @@
 @import '../../styles/global.scss';
-.desc-content {
-  font-weight: 900;
-  .btn-primary{
-    background-color: $my-color;
-    border: 0px solid $my-color;
+.section-hero{
+  height: 100vh;
+  .desc-content {
+    font-weight: 900;
+    .btn-primary{
+      background-color: $my-color;
+      border: 0px solid $my-color;
+    }
+    .img-media-size{
+      height: 546px;
+      width: 546px;
+    }
+    .Typewriter {
+      font-size: xx-large;
+      font-weight: bold;
+      color: $my-color;
+    }
   }
-  .img-media-size{
-    height: 546px;
-    width: 546px;
+  
+  @media (min-width: 700px) and (max-width: 1420px){
+    .img-media-size{
+      width: 100%;
+    }
   }
-  .Typewriter {
-    font-size: xx-large;
-    font-weight: bold;
-    color: $my-color;
-  }
-}
-
-@media (min-width: 700px) and (max-width: 1420px){
-  .img-media-size{
-    width: 100%;
-  }
-}
-
-@media (min-width: 1421PX) and (max-width: 1920PX){
-  .img-media-size{
-    height: 546px;
-    width: 546px;
+  
+  @media (min-width: 1421PX) and (max-width: 1920PX){
+    .img-media-size{
+      height: 546px;
+      width: 546px;
+    }
   }
 }
 

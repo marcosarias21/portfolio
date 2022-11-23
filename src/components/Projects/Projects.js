@@ -21,7 +21,7 @@ const Projects = ({
   };
   const [isEnter, setIsEnter] = useState(true);
   return (
-    <div className='row justify-content-center mb-5 p-3 border-section'>
+    <div className='row justify-content-center my-2 p-3 border-section'>
         <motion.div
         key={id}
         variants={variants}

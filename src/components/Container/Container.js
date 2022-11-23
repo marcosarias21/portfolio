@@ -1,8 +1,8 @@
 import './container.scss';
 
-const Container = ({ children }) => {
+const Container = ({ children, className }) => {
   return (
-    <section className="container d-flex align-items-center justify-content-center">
+    <section className={`d-flex align-items-center justify-content-center ${className}`}>
       {children}
     </section>
   );
