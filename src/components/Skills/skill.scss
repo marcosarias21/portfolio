@@ -1,4 +1,10 @@
 @import '../../styles/global.scss';
+.bg-skills{
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 100px 0px;
+}
 .skillCard {
   transition: all 0.2s ease-in-out;
   border-radius: 3px;
