@@ -6,7 +6,7 @@ import './skill.scss';
 
 const Skills = () => {
   return (
-    <Container>
+    <Container className='bg-skills'>
       <div className='d-flex flex-column align-items-center'>
           <h2 className='mb-2 color-title'> My Skillset</h2>
           <div className='d-flex flex-wrap justify-content-center skill-section-space'>

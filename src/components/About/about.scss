@@ -1,32 +1,36 @@
 @import '../../styles/global.scss';
-
-.text-my-color{
-  color: $my-color;
-}
-.text-style{
-  text-align: justify;
-  color: gray;
-  font-size: 20px;
-}
-.btn{
-  .svg-size{
-    width: 20px;
-    height: 20px;
-    color: inherit;
-    margin-bottom: 4px;
+.bg-about{
+  background-color: white;
+  border-radius: 50px;
+  padding: 48px;
+  .text-my-color{
+    color: $my-color;
   }
-  svg{
-    width: 35px;
-    height: 35px;
+  .text-style{
+    text-align: justify;
+    color: gray;
+    font-size: 20px;
   }
-}
-
-@media (max-width: 1000px) {
   .btn{
-    svg{
-      width: 30px;
-      height: 30px;
+    .svg-size{
+      width: 20px;
+      height: 20px;
+      color: inherit;
+      margin-bottom: 4px;
     }
-  }  
-}
+    svg{
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .btn{
+      svg{
+        width: 30px;
+        height: 30px;
+      }
+    }  
+  }
 
+}  
