@@ -27,7 +27,7 @@ const ContactForm = () => {
 
   return (
     <section className='form-margin'>
-      <div className='container bg-form-style d-flex flex-column p-4'>
+      <div className='container bg-form-style d-flex flex-column'>
         <h2 className='my-5'>Contact Me!</h2>
         <form ref={form} onSubmit={sendEmail} className='form row text-center'>
           <div className="form-floating mb-4 col-6">

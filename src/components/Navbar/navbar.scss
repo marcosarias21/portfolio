@@ -1,14 +1,11 @@
 @import '../../styles/global.scss';
 
-nav {
+.menu-hidden {
+  transition: all 0.3s ease-in;
   width: 105px;
   height: 100vh;
   background: inherit;
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between ;
-  align-items: center ;
   background-color: $my-color ;
   div{  
       svg{
@@ -16,6 +13,7 @@ nav {
         margin-right: 10px;
       }  
         .nav-link {
+          transition-duration: 0.25s;
           letter-spacing: 1px;
           margin-bottom: 10px;
           color: white;
@@ -25,6 +23,8 @@ nav {
           padding: 10px 20px;
           transition-duration: 0.25s;
           span{
+            transition-duration: 0.2s;
+            transition-delay: 0.1s;
             display: none;
           }
           &:hover{
@@ -34,8 +34,21 @@ nav {
             }
         }
     }
+    &:hover{
+      width: 220px;
+      div{
+        .nav-link{
+          width: 150px;     
+          transition-duration: 0.25s;
+          span{
+            transition-duration: 0.2s;
+            transition-delay: 0.1s;
+            display: contents;
+          }
+        }
+      }
+    }
 } 
-    
 
 @media (max-width: 990px) {
   header{
