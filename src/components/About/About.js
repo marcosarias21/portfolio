@@ -13,13 +13,13 @@ const About = () => {
   return (
     <Container className='mb-5 bg-about'>
       <Layout>
-        <div className='col-sm-12 col-md-12 col-lg-6 text-center'>
+        <div className='col-sm-12 col-md-12 col-lg-6'>
           <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
           viewport={{ once: true }}
           className='fw-bold'>
-          Who <span className='text-my-color'> I'm?</span>
+          Who I'm?
           </motion.h2>
           <motion.p
           initial={{ opacity: 0, y: -80 }}

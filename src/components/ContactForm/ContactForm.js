@@ -27,8 +27,8 @@ const ContactForm = () => {
 
   return (
     <section className='form-margin'>
-      <h2 className='my-5'>Contact Me!</h2>
-      <div className='container bg-form-style d-flex flex-column align-items-center'>
+      <div className='container bg-form-style d-flex flex-column p-4'>
+        <h2 className='my-5'>Contact Me!</h2>
         <form ref={form} onSubmit={sendEmail} className='form row text-center'>
           <div className="form-floating mb-4 col-6">
             <input type="text" className="form-control" id="floatingInput" name="user_name" placeholder="Name..." required />
@@ -41,14 +41,14 @@ const ContactForm = () => {
           <div className="form-floating col-12">
             <textarea className="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
             <label htmlFor="floatingPassword"><BsTextCenter /> Message... </label>
-          </div>
-        </form>
           <Button className='mb-4' type="submit" value="Send" text='Submit' />
           {showAlert
             ? (<div className="alert alert-success" role="alert"> Your message has been sent successfully!
               <button onClick={() => setShowAlert(false)} className='btn text-success mb-1'><AiOutlineClose /> </button>
             </div>
             ) : null }
+          </div>
+        </form>
       </div>
     </section>
   );
