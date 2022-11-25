@@ -1,6 +1,9 @@
 @import '../../styles/global.scss';
 .section-hero{
   height: 100vh;
+  h2{
+    letter-spacing: 1px;
+  }
   .desc-content {
     font-weight: 900;
     .btn-primary{
