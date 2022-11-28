@@ -15,3 +15,17 @@
    }
 }
 }
+
+@media (min-width: 319px) and (max-width: 359px) {
+  .bg-form-style{
+    padding: 10px;
+    background-color: inherit;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 760px) {
+  .bg-form-style{
+    padding: 0px;
+    background-color: inherit;
+  }
+}
