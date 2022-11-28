@@ -66,11 +66,21 @@
     .container-scroll{
       margin-bottom: 100px;
       .scroll-project {
-        padding: 0;
+        padding: 10px;
         background-color: inherit;
       }
     }
   }
+
+@media (min-width: 360px) and (max-width:760px) {
+  .container-scroll{
+    .scroll-project {
+      padding: 18px;
+      background-color: inherit;
+    }
+  }
+}
+
 
   @media (max-width: 990px) {
     .container-scroll{

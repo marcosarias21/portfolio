@@ -7,7 +7,7 @@ import './skill.scss';
 const Skills = () => {
   return (
     <Container className='bg-skills'>
-      <div className='d-flex flex-column p-4'>
+      <div className='d-flex flex-column'>
           <h2 className='color-title mb-4'> My Skillset</h2>
           <div className='d-flex flex-wrap justify-content-center skill-section-space'>
             <AnimatePresence>

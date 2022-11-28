@@ -23,7 +23,18 @@
       height: 35px;
     }
   }
+
   
+}  
+
+
+  @media (min-width: 319px) and (max-width: 760px) {
+    .bg-about{
+      background-color: inherit;
+      padding: 18px;
+    }
+  }
+
   @media (max-width: 1000px) {
     .btn{
       svg{
@@ -32,5 +43,3 @@
       }
     }  
   }
-
-}  
