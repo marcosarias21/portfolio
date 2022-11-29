@@ -1,11 +1,13 @@
 @import '../../styles/global.scss';
 
 .menu-hidden {
+  padding-left: 20px;
   transition: all 0.3s ease-in;
   width: 105px;
   height: 100vh;
   background: inherit;
   position: fixed;
+  z-index: 2;
   background-color: $my-color ;
   div{  
       svg{
