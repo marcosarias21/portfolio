@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import { useState } from 'react';
 import {
   BsStars, BsFillHouseDoorFill, BsCast, BsChat,
 } from 'react-icons/bs';
@@ -7,10 +6,12 @@ import { FaGithub } from 'react-icons/fa';
 import { Switch } from '../Switch';
 import './navbar.scss';
 
-const Navbar = () => {
+const Navbar = ({ showMenu }) => {
   return (
-    <header>
-      <nav className='d-flex flex-column justify-content-between menu-hidden'>
+    <header className={showMenu === true && 'd-block'}>
+      <nav className={classNames('d-flex flex-column justify-content-between menu-hidden', {
+        'menu-show': showMenu === true,
+      })}>
         <div>
           <h1 className='fw-bold'>hola</h1>
         </div>

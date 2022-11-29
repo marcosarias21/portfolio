@@ -1,0 +1,21 @@
+.burger-position{
+  position: relative;
+  .burger-fixed{
+    cursor: pointer;
+    position: fixed;
+    height: 30px;
+    width: 35px;
+    padding: 10px;
+    top: 35px;
+    right: 68px;
+    z-index: 20;
+  }
+}
+
+@media (min-width: 999px) {
+  .burger-position{
+    .burger-fixed{
+      display: none;
+    }
+  }
+}

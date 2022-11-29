@@ -5,13 +5,16 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './index.css';
 import { ThemeProvider } from './provider/ThemeContext';
+import { BurgerProvider } from './provider/BurgerMenuContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider>
+      <BurgerProvider>
         <App />
+      </BurgerProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
