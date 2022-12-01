@@ -1,0 +1,9 @@
+.outer-wrapper{
+  margin-left: 90px;
+}
+
+@media (max-width: 990px) {
+  .outer-wrapper{
+    margin-left: 0px;
+  }
+}

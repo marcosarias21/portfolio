@@ -10,6 +10,9 @@ import { projects } from '../../helper/projects';
 import burgerContext from '../../provider/BurgerMenuContext';
 import { useThemeContext } from '../../provider/ThemeContext';
 import './home.scss';
+import { Footer } from '../../components/Footer';
+import { OuterWrapper } from '../../components/OuterWrapper';
+import { InnerWrapper } from '../../components/InnerWrapper';
 
 const Home = () => {
   const theme = useThemeContext();
@@ -17,24 +20,25 @@ const Home = () => {
 
   return (
     <section className={theme === 'light' ? 'container-scroll' : 'container-scroll-dark'}>
-        <Navbar showMenu={showMenu} />
-        <MenuBurger showMenu={showMenu} />
-      <div className='outer-wrapper'>
-        <div className='inner-wrapper'>
+      <Navbar showMenu={showMenu} />
+      <MenuBurger showMenu={showMenu} />
+      <OuterWrapper>
+        <InnerWrapper>
           <Hero />
           <About />
           <Skills />
           <section>
             <div className='scroll-project' id='project'>
               <div className='d-flex flex-column'>
-            <h2 className='color-title mb-5'>Projects</h2>
+                <h2 className='color-title mb-5'>Projects</h2>
                 {projects.map(project => <Projects key={project.id} {...project} />)}
               </div>
             </div>
           </section>
           <ContactForm />
-        </div>
-      </div>
+        </InnerWrapper>
+        <Footer />
+      </OuterWrapper>
     </section>
   );
 };
