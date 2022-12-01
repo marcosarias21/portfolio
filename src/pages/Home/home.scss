@@ -4,13 +4,6 @@
   position: relative;
   transition: background-color 0.5s ease 0s;
   background-color: #f7f7f7;
-  .outer-wrapper{
-    margin-left: 90px;
-    .inner-wrapper{
-      padding: 0 33px;
-      max-width: 1140px;
-      margin: 0 auto;
-    }
   }
   .scroll-project{   
     padding: 48px;
@@ -28,7 +21,6 @@
   }
   .form-margin{
     margin-top: 200px;
-  }
   }  
   .container-scroll-dark {
     @extend .container-scroll;
@@ -86,12 +78,6 @@
     .container-scroll{
       overflow-y: scroll;
       scroll-behavior: smooth;
-      .outer-wrapper{
-        margin-left: 0px;
-        .inner-wrapper{
-          padding: 0px;
-        }
-      }
     }
     section{
       scroll-snap-align: center;
