@@ -13,7 +13,7 @@ const Navbar = ({ showMenu }) => {
         'menu-show': showMenu === true,
       })}>
         <div>
-          <h1 className='fw-bold'>hola</h1>
+          <h1>hola</h1>
         </div>
         <div className='nav-item d-flex flex-column'>
           <a className="nav-link" aria-current="page" href="#"><BsFillHouseDoorFill className='mb-1' /><span>Home</span></a>

@@ -21,14 +21,16 @@ const Projects = ({
   };
   const [isEnter, setIsEnter] = useState(true);
   return (
-    <div className='row justify-content-center my-2 p-3 border-section'>
-        <motion.div
-        key={id}
-        variants={variants}
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ once: true }}
-        className='col-sm-12 col-md-6 col-lg-6'>
+    <motion.div initial={{ scale: 0, opacity: 0 }} whileInView={{
+      scale: 1,
+      opacity: 1,
+      transition: {
+        ease: 'easeOut',
+        duration: 1.2,
+      },
+    }}
+         className='row justify-content-center my-2 p-3 border-section'>
+        <div className='col-sm-12 col-md-6 col-lg-6'>
           <h3>{title}</h3>
           <p>{description}</p>
           <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
@@ -38,13 +40,13 @@ const Projects = ({
             {githubBackend ? <a target='blank' href={githubBackend}> <AiOutlineDatabase className='svg-size' /></a> : null }
             <a target='blank' href={demo}><FaPager className='ms-2 svg-size text-danger' /></a>
           </div>
-        </motion.div>
-        <motion.div variants={variants} initial='hidden' whileInView='visible' viewport={{ once: true }} className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
+        </div>
+        <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
           <a target='blank' href={demo}>
           <img className='img-project-size' onMouseEnter={() => setIsEnter(false)} onMouseLeave={() => setIsEnter(true)} src={isEnter ? image : imageTwo} />
           </a>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
   );
 };
 

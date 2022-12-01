@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { BsTextCenter } from 'react-icons/bs';
@@ -26,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className='form-margin'>
+    <motion.section initial={{ y: 200, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { type: 'easeIn', duration: 0.5 } }} className='form-margin'>
       <div className='container bg-form-style d-flex flex-column'>
         <h2 className='my-3'>Contact Me!</h2>
         <form ref={form} onSubmit={sendEmail} className='form row text-center'>
@@ -50,7 +51,7 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
