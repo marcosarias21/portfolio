@@ -7,19 +7,8 @@ import './project.scss';
 const Projects = ({
   title, description, githubBackend, github, demo, image, imageTwo, status, id,
 }) => {
-  const variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.6,
-        duration: 1,
-      },
-    },
-  };
   const [isEnter, setIsEnter] = useState(true);
+
   return (
     <motion.div
     initial={{ scale: 0, opacity: 0 }}
