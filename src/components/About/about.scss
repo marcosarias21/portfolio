@@ -3,12 +3,8 @@
   background-color: white;
   border-radius: 50px;
   padding: 48px;
-  .text-my-color{
-    color: $my-color;
-  }
   .text-style{
     text-align: justify;
-    color: gray;
     font-size: 20px;
   }
   .btn{
@@ -23,8 +19,10 @@
       height: 35px;
     }
   }
-
-  
+}
+.bg-about-dark{
+  @extend .bg-about;
+  background-color: inherit;
 }  
 
 

@@ -1,24 +1,21 @@
 @import '../../styles/global.scss';
 
-  .container-scroll {
+.container-scroll {
   position: relative;
   transition: background-color 0.5s ease 0s;
   background-color: #f7f7f7;
+}
+
+.scroll-project{   
+  padding: 48px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50px;
   }
-  .scroll-project{   
-    padding: 48px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 50px;
-    .color-title{
-      color: $title-color;
-      letter-spacing: 2px;
-      text-decoration: underline;
-    }
-  }
+  
   .form-margin{
     margin-top: 200px;
   }  
@@ -32,7 +29,7 @@
     p{
       color: $text-color-darkmode;
     }
-
+    
     input {
       outline: none;
       transition: background-color 0.5s ease 0s;
@@ -41,7 +38,7 @@
     }
     label{
       color: gray;
-    
+      
     }
     textarea{
       transition: background-color 0.5s ease 0s;
@@ -50,8 +47,16 @@
     .svg-size{
       color: $text-color-darkmode;
     }
-
   }
+
+    .scroll-project-dark{
+      @extend .scroll-project;
+      background-color: inherit;
+      .border-section{
+        border: 1px solid #212529;
+        box-shadow: none;
+      }
+    }
 
   
   @media (min-width: 300px) and (max-width:359px) {
@@ -85,7 +90,7 @@
     .scroll-project{
       display: flex;
       flex-direction: column;
-      padding: 0;
+      padding: 48px;
       scroll-margin: 300px;
     }
 }

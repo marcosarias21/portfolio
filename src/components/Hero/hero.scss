@@ -24,6 +24,10 @@
       }
     }
   }
+  .container-hero-dark{
+    @extend .container-hero;
+    background: inherit;
+  }
   
   @media (max-width: 359px) {
     .container-hero{

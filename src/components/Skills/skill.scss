@@ -6,6 +6,7 @@
   margin: 100px 0px;
 
   .skillCard {
+    color: gray;
     transition: all 0.2s ease-in-out;
     border-radius: 3px;
     border: 0px;
@@ -58,7 +59,13 @@
     color: $git-color;
   }
 }
-
+.bg-skills-dark{
+  @extend .bg-skills;
+  background-color: inherit;
+  .skillCard{
+    color: #EFEFF2;
+  }
+}
 @media (max-width: 359px) {
   .bg-skills{
     padding: 12px;

@@ -1,20 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from 'framer-motion';
+import classNames from 'classnames';
 import Typewriter from 'typewriter-effect';
 import { Container } from '../Container';
 import { Layout } from '../Layout';
 import { Images } from '../Images';
 import imgLight from '../../assets/images/imgLight.gif';
 import imgDark from '../../assets/images/imageDark.gif';
-import './hero.scss';
-import { useThemeContext } from '../../provider/ThemeContext';
 import { Button } from '../Button';
+import './hero.scss';
 
-const Hero = () => {
-  const theme = useThemeContext();
+const Hero = ({ theme }) => {
+  console.log(theme);
   return (
     <Container className='section-hero'>
-        <Layout className='container-hero'>
+        <Layout className={classNames({
+          'container-hero': theme === 'light',
+          'container-hero-dark': theme === 'dark',
+        })}>
           <div className="col-sm-12 col-md-6 col-lg-6 desc-content">
             <motion.h1
               initial={{ opacity: 0 }}

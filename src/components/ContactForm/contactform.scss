@@ -1,5 +1,5 @@
 @import '../../styles/global.scss';
-.bg-form-style{
+.bg-form-light{
   margin-bottom: 100px;
   background: white;
   height: auto;
@@ -21,16 +21,20 @@
   }
 }
 }
+.bg-form-dark{
+  @extend .bg-form-light;
+  background-color: inherit;
+}
 
 @media (min-width: 319px) and (max-width: 359px) {
-  .bg-form-style{
+  .bg-form-light{
     padding: 10px;
     background-color: inherit;
   }
 }
 
 @media (min-width: 360px) and (max-width: 760px) {
-  .bg-form-style{
+  .bg-form-light{
     padding: 0px;
     background-color: inherit;
   }
