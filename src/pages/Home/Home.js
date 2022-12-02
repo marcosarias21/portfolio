@@ -24,18 +24,18 @@ const Home = () => {
       <MenuBurger showMenu={showMenu} />
       <OuterWrapper>
         <InnerWrapper>
-          <Hero />
-          <About />
-          <Skills />
+          <Hero theme={theme} />
+          <About theme={theme} />
+          <Skills theme={theme} />
           <section>
-            <div className='scroll-project' id='project'>
+            <div className={theme === 'light' ? 'scroll-project' : 'scroll-project-dark' } id='project'>
               <div className='d-flex flex-column'>
-                <h2 className='color-title mb-5'>Projects</h2>
+                <h2 className='mb-5'>Projects</h2>
                 {projects.map(project => <Projects key={project.id} {...project} />)}
               </div>
             </div>
           </section>
-          <ContactForm />
+          <ContactForm theme={theme}/>
         </InnerWrapper>
         <Footer />
       </OuterWrapper>

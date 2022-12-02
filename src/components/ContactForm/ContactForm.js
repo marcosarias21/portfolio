@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
@@ -7,7 +8,7 @@ import { FaUser } from 'react-icons/fa';
 import { Button } from '../Button';
 import './contactform.scss';
 
-const ContactForm = () => {
+const ContactForm = ({ theme }) => {
   const serviceKey = process.env.REACT_APP_SERVICE_ID;
   const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
   const userKey = process.env.REACT_APP_USER_KEY;
@@ -32,7 +33,10 @@ const ContactForm = () => {
     whileInView={{ y: 0, opacity: 1, transition: { type: 'easeIn', duration: 0.5 } }}
     viewport={{ once: true }}
     className='form-margin' >
-      <div className='container bg-form-style d-flex flex-column'>
+      <div className={classNames('container d-flex flex-column', {
+        'bg-form-light': theme === 'light',
+        'bg-form-dark': theme === 'dark',
+      })}>
         <h2 className='my-3'>Contact Me!</h2>
         <form ref={form} onSubmit={sendEmail} className='form row text-center'>
           <div className="form-floating mb-4 col-sm-12 col-md-6 col-lg-6">

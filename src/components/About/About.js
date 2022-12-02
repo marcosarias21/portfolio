@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -11,14 +12,17 @@ import './about.scss';
 const About = () => {
   const theme = useThemeContext();
   return (
-    <Container className='mb-5 bg-about'>
+    <Container className={classNames('mb-5 bg-about', {
+      'bg-about-dark': theme === 'dark',
+      'bg-about': theme === 'light',
+    })}>
       <Layout>
         <div className='col-sm-12 col-md-12 col-lg-6'>
           <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
           viewport={{ once: true }}>
-          Who I'm?
+            Who I'm?
           </motion.h2>
           <motion.p
           initial={{ opacity: 0, y: -80 }}

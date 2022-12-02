@@ -26,3 +26,10 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 770px) and (max-width: 990px) {
+  .border-section{
+    padding: 10px;
+  }
+  
+}
