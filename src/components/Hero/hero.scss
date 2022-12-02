@@ -4,23 +4,39 @@
   h2{
     letter-spacing: 1px;
   }
-  .desc-content {
-    font-weight: 900;
-    .btn-primary{
-      background-color: $my-color;
-      border: 0px solid $my-color;
-    }
-    .img-media-size{
-      height: 546px;
-      width: 546px;
-    }
-    .Typewriter {
-      font-size: xx-large;
-      font-weight: bold;
-      color: $my-color;
+  .container-hero{
+    background: white;
+    border-radius: 50px;
+    .desc-content {
+      font-weight: 900;
+      .btn-primary{
+        background-color: $my-color;
+        border: 0px solid $my-color;
+      }
+      .img-media-size{
+        height: 546px;
+        width: 546px;
+      }
+      .Typewriter {
+        font-size: xx-large;
+        font-weight: bold;
+        color: $my-color;
+      }
     }
   }
   
+  @media (max-width: 359px) {
+    .container-hero{
+      padding: 12px;
+      background-color: inherit;
+    }
+  }
+  @media (min-width: 360px) and (max-width: 760px) {
+    .container-hero{
+      padding: 18px;
+      background-color: inherit;
+    }
+  }
   @media (min-width: 700px) and (max-width: 1420px){
     .img-media-size{
       width: 100%;
@@ -29,8 +45,7 @@
   
   @media (min-width: 1421PX) and (max-width: 1920PX){
     .img-media-size{
-      height: 546px;
-      width: 546px;
+      width: 100%;
     }
   }
 }

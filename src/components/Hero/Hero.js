@@ -14,7 +14,7 @@ const Hero = () => {
   const theme = useThemeContext();
   return (
     <Container className='section-hero'>
-        <Layout>
+        <Layout className='container-hero'>
           <div className="col-sm-12 col-md-6 col-lg-6 desc-content">
             <motion.h1
               initial={{ opacity: 0 }}
