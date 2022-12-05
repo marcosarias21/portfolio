@@ -21,3 +21,9 @@
     height: 250px;
   }
 }
+
+@media (max-width: 770px) {
+  .img-size{
+    box-shadow: none;
+  }
+}
