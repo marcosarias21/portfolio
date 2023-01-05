@@ -22,7 +22,7 @@ const Navbar = ({ showMenu }) => {
           <a className="nav-link"><BsCast className='mb-1' /><span>Projects</span></a>
           <a className="nav-link"><BsChat className='mb-1' /><span>Contact</span></a>
         </div>
-        <div>
+        <div className='ms-2 mb-4'>
           <Switch />
         </div>
       </nav>

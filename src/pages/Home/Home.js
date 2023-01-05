@@ -37,7 +37,7 @@ const Home = () => {
           </section>
           <ContactForm theme={theme}/>
         </InnerWrapper>
-        <Footer />
+        <Footer theme={theme} />
       </OuterWrapper>
     </section>
   );
