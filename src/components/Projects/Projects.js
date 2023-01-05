@@ -5,21 +5,21 @@ import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
 
 const Projects = ({
-  title, description, githubBackend, github, demo, image, imageTwo, status, id,
+  title, description, githubBackend, github, demo, image, imageTwo, status,
 }) => {
   const [isEnter, setIsEnter] = useState(true);
 
   return (
     <motion.div
-    initial={{ scale: 0, opacity: 0 }}
-    whileInView={{
-      scale: 1,
-      opacity: 1,
-      transition: {
-        ease: 'easeOut',
-        duration: 1.2,
-      },
-    }}
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{
+        scale: 1,
+        opacity: 1,
+        transition: {
+          ease: 'easeOut',
+          duration: 1.2,
+        },
+      }}
       viewport={{ once: true }}
       className='row justify-content-center my-2 p-3 border-section'>
       <div className='col-sm-12 col-md-6 col-lg-6'>
