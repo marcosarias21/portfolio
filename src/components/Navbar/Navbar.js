@@ -9,8 +9,9 @@ import './navbar.scss';
 const Navbar = ({ showMenu }) => {
   return (
     <header className={showMenu === true && 'd-block'}>
-      <nav className={classNames('d-flex flex-column justify-content-between menu-hidden', {
+      <nav className={classNames('d-flex flex-column justify-content-between', {
         'menu-show': showMenu === true,
+        'menu-hidden': showMenu === false,
       })}>
         <div className='d-flex justify-content-center logo-container py-3'>
           <h2>M.A</h2>

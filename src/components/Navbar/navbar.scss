@@ -48,15 +48,15 @@
         }
       }
       &:hover{
+        width: 220px;
         .lastName-hidden{
           display: block;
           transition:  1.2s ease-in;
         }
-        width: 220px;
-        div{
+        .nav-item{
           .nav-link{
             width: 150px;     
-          transition-duration: 0.25s;
+            transition-duration: 0.25s;
           span{
             transition-duration: 0.2s;
             transition-delay: 0.1s;
@@ -73,8 +73,13 @@
   @extend .menu-hidden;
   display: block;
   width: 220px;
-      div{
+    .lastName-hidden{
+      display: block;
+    }
+      .nav-item{
+        display: block;
         .nav-link{
+          display: block;
           width: 150px;     
           transition-duration: 0.25s;
           span{
