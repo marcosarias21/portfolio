@@ -7,7 +7,7 @@ import './skill.scss';
 
 const Skills = ({ theme }) => {
   return (
-    <Container className={classNames({
+    <Container id='skills' className={classNames({
       'bg-skills-dark': theme === 'dark',
       'bg-skills': theme === 'light',
     })}>

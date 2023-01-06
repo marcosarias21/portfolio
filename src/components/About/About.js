@@ -12,7 +12,7 @@ import './about.scss';
 const About = () => {
   const theme = useThemeContext();
   return (
-    <Container className={classNames('mb-5 bg-about', {
+    <Container id='about' className={classNames('mb-5 bg-about', {
       'bg-about-dark': theme === 'dark',
       'bg-about': theme === 'light',
     })}>

@@ -13,12 +13,12 @@ import './hero.scss';
 const Hero = ({ theme }) => {
   console.log(theme);
   return (
-    <Container className='section-hero'>
+    <Container className='section-hero' id='home'>
         <Layout className={classNames({
           'container-hero': theme === 'light',
           'container-hero-dark': theme === 'dark',
         })}>
-          <div className="col-sm-12 col-md-6 col-lg-6 desc-content">
+          <div className="col-sm-12 col-md-6 col-lg-6 desc-content" id='home'>
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
