@@ -32,7 +32,7 @@ const ContactForm = ({ theme }) => {
     initial={{ y: 200, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1, transition: { type: 'easeIn', duration: 0.5 } }}
     viewport={{ once: true }}
-    className='form-margin' >
+    className='form-margin' id='contact'>
       <div className={classNames('container d-flex flex-column', {
         'bg-form-light': theme === 'light',
         'bg-form-dark': theme === 'dark',

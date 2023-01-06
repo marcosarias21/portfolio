@@ -29,7 +29,7 @@ const Home = () => {
           <Skills theme={theme} />
           <section>
             <div className={theme === 'light' ? 'scroll-project' : 'scroll-project-dark' } id='project'>
-              <div className='d-flex flex-column'>
+              <div id='projects' className='d-flex flex-column'>
                 <h2 className='mb-5'>Projects</h2>
                 {projects.map(project => <Projects key={project.id} {...project} />)}
               </div>
