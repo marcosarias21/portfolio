@@ -5,7 +5,6 @@ import './menuburger.scss';
 
 const MenuBurger = ({ showMenu }) => {
   const { setShowMenu } = useContext(burgerContext);
-  console.log(showMenu);
   return (
     <div className="burger-position">
       <div className='burger-fixed'>

@@ -37,7 +37,7 @@ const ContactForm = ({ theme }) => {
         'bg-form-light': theme === 'light',
         'bg-form-dark': theme === 'dark',
       })}>
-        <h2 className='my-3'>Contact Me!</h2>
+        <h2 className='my-3 contact-title'>Contact Me!</h2>
         <form ref={form} onSubmit={sendEmail} className='form row text-center'>
           <div className="form-floating mb-4 col-sm-12 col-md-6 col-lg-6">
             <input type="text" className="form-control" id="floatingInput" name="user_name" placeholder="Name..." required />

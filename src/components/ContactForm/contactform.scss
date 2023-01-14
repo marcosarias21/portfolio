@@ -30,6 +30,9 @@
   .bg-form-light{
     padding: 10px;
     background-color: inherit;
+    .contact-title{
+      margin-left: 18px;
+    }
   }
 }
 
@@ -37,5 +40,8 @@
   .bg-form-light{
     padding: 0px;
     background-color: inherit;
+    .contact-title{
+      margin-left: 18px;
+    }
   }
 }

@@ -11,7 +11,6 @@ import { Button } from '../Button';
 import './hero.scss';
 
 const Hero = ({ theme }) => {
-  console.log(theme);
   return (
     <Container className='section-hero' id='home'>
         <Layout className={classNames({
