@@ -26,6 +26,18 @@
   }
 }
 
+@media (max-width: 400px) {
+  .border-section{
+    min-height: 473px;
+  }
+}
+@media (min-width: 401px) and (max-width: 420px) {
+  .border-section{
+    min-height: 378px;
+  }
+}
+
+
 @media (min-width: 770px) and (max-width: 990px) {
   .border-section{
     padding: 10px;
