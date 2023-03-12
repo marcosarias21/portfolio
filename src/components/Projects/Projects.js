@@ -5,9 +5,10 @@ import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
 
 const Projects = ({
-  title, description, githubBackend, github, demo, image, imageTwo, status,
+  title, description, githubBackend, github, demo, image, imageTwo, status, tools,
 }) => {
   const [isEnter, setIsEnter] = useState(true);
+  console.log(tools);
 
   return (
     <motion.div
@@ -25,6 +26,9 @@ const Projects = ({
       <div className='col-sm-12 col-md-6 col-lg-6'>
         <h3>{title}</h3>
         <p>{description}</p>
+        <div className='d-flex flex-wrap'>
+          {tools.map((tool, i) => <span key={i} className='btn btn-outline-secondary m-1 tools'>{tool}</span>)}
+        </div>
         <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
         </p>
         <div>

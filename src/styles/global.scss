@@ -1,4 +1,7 @@
-$font-family: 'Centra', 'Roboto', sans-serif;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../assets/fonts/Satoshi-Variable.ttf');
+}
 $my-color: #0d6dfd;
 $gray-color: #6b7688;
 $html-color: #f06529;
@@ -18,8 +21,7 @@ $slider-offset: 0.3em;
 $text-color-darkmode: #EFEFF1;
 $title-color: #333333;
 body {
-  font-family: sans-serif;
-  letter-spacing: 0.8px;
+  font-family: 'Satoshi';
   margin:0;
   padding:0;
   scroll-behavior: smooth;
