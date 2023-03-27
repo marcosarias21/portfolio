@@ -9,7 +9,7 @@ const ContainerMeImg = () => {
       initial={{ opacity: 0, x: 80 }}
       whileInView={{ opacity: 1, x: 0, transition: { delay: 2, duration: 0.8 } }}
       viewport={{ once: true }}>
-      <img className='img-size' src={picture} />
+      <img className='img-size' src={picture} alt={picture} />
     </motion.div>
   );
 };
