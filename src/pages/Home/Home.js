@@ -13,6 +13,7 @@ import './home.scss';
 import { Footer } from '../../components/Footer';
 import { OuterWrapper } from '../../components/OuterWrapper';
 import { InnerWrapper } from '../../components/InnerWrapper';
+import { FilterProject } from '../../components/FilterProject';
 
 const Home = () => {
   const theme = useThemeContext();
@@ -31,6 +32,7 @@ const Home = () => {
             <div className={theme === 'light' ? 'scroll-project' : 'scroll-project-dark' } id='project'>
               <div id='projects' className='d-flex flex-column'>
                 <h2 className='mb-5'>Projects</h2>
+                <FilterProject />
                 {projects.map(project => <Projects key={project.id} {...project} />)}
               </div>
             </div>

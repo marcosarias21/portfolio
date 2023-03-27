@@ -8,7 +8,6 @@ const Projects = ({
   title, description, githubBackend, github, demo, image, imageTwo, status, tools,
 }) => {
   const [isEnter, setIsEnter] = useState(true);
-  console.log(tools);
 
   return (
     <motion.div

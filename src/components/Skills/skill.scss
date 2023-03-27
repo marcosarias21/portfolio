@@ -167,13 +167,14 @@
 
 @media (min-width: 1441px) and (max-width: 1921px){  
   .skill-section-space{
+    column-gap: 36px;
     max-width: 100%;
     .skillCard{
-      width: 180px;
+      width: 15%;
       margin: 10px;
       padding: 0px;
       .skillIcon{
-        font-size: 180px;
+        font-size: auto;
       }
     }
   }

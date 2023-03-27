@@ -6,7 +6,7 @@ import './initialpage.scss';
 
 const InitialPage = () => {
   return (
-    <section className='initial-section container d-flex flex-column align-items-center justify-content-center'>
+    <motion.section className='initial-section container d-flex flex-column align-items-center justify-content-center' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <motion.div className='text-content my-auto' initial={{ opacity: 0 }} animate={{ opacity: 1 }}
        transition={{ delay: 0.5, duration: 1 }} >
         <h1>Hello, I'm <span className='text-danger'> Marcos Arias </span></h1>
@@ -27,7 +27,7 @@ const InitialPage = () => {
           </motion.h1>
       </motion.div>
       <BackgroundVideo />
-    </section>
+    </motion.section>
   );
 };
 
