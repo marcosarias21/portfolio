@@ -10,9 +10,12 @@
   background-color: $my-color ;
   .logo-container{
     background-color: #0565f5;
-  }
-  .lastName-hidden{
-    display: none;
+    .f-family{
+      font-family: monospace;
+    }
+    .lastName-hidden{
+      display: none;
+    }
   }
   h2{
     color: white;

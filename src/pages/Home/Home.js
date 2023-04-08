@@ -9,11 +9,11 @@ import { Skills } from '../../components/Skills';
 import { projects } from '../../helper/projects';
 import burgerContext from '../../provider/BurgerMenuContext';
 import { useThemeContext } from '../../provider/ThemeContext';
-import './home.scss';
 import { Footer } from '../../components/Footer';
 import { OuterWrapper } from '../../components/OuterWrapper';
 import { InnerWrapper } from '../../components/InnerWrapper';
 import { FilterProject } from '../../components/FilterProject';
+import './home.scss';
 
 const Home = () => {
   const theme = useThemeContext();
