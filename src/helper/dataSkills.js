@@ -63,6 +63,13 @@ export const dataSkills = [
   },
   {
     id: 10,
+    cardClass: 'sassCard',
+    iconClass: 'devicon-graphql-plain colored',
+    style: 'shadow-pink-400',
+    title: 'GraphQL',
+  },
+  {
+    id: 11,
     title: 'GitHub',
     cardClass: 'gitCard',
     iconClass: 'devicon-git-plain-wordmark colored',
