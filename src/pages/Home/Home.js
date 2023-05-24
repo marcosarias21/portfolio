@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { About } from '../../components/About';
 import { ContactForm } from '../../components/ContactForm';
 import { MenuBurger } from '../../components/MenuBurger';
@@ -14,10 +14,22 @@ import { OuterWrapper } from '../../components/OuterWrapper';
 import { InnerWrapper } from '../../components/InnerWrapper';
 import { FilterProject } from '../../components/FilterProject';
 import './home.scss';
+import projectContext from '../../provider/FilterProjectContext';
 
 const Home = () => {
   const theme = useThemeContext();
+  const { typeProject } = useContext(projectContext);
+  const [projectsState, setProjectsState] = useState([]);
   const { showMenu } = useContext(burgerContext);
+
+  useEffect(() => {
+    const projectsFiltered = projects.filter(project => project.type === typeProject);
+    if (projectsState.length === 0) {
+      setProjectsState(projects);
+    } else {
+      setProjectsState(projectsFiltered);
+    }
+  }, [typeProject]);
 
   return (
     <section className={theme === 'light' ? 'container-scroll' : 'container-scroll-dark'}>
@@ -33,7 +45,7 @@ const Home = () => {
               <div id='projects' className='d-flex flex-column'>
                 <h2 className='mb-5'>Projects</h2>
                 <FilterProject />
-                {projects.map(project => <Projects key={project.id} {...project} />)}
+                {projectsState.map(project => <Projects key={project.id} {...project} />)}
               </div>
             </div>
           </section>

@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import { ThemeProvider } from './provider/ThemeContext';
 import { BurgerProvider } from './provider/BurgerMenuContext';
+import { ProjectProvider } from './provider/FilterProjectContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     <BrowserRouter>
       <ThemeProvider>
       <BurgerProvider>
+      <ProjectProvider>
         <App />
+      </ProjectProvider>
       </BurgerProvider>
       </ThemeProvider>
     </BrowserRouter>
