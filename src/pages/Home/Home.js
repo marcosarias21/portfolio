@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { About } from '../../components/About';
 import { ContactForm } from '../../components/ContactForm';
 import { MenuBurger } from '../../components/MenuBurger';
@@ -24,11 +25,7 @@ const Home = () => {
 
   useEffect(() => {
     const projectsFiltered = projects.filter(project => project.type === typeProject);
-    if (projectsState.length === 0) {
-      setProjectsState(projects);
-    } else {
-      setProjectsState(projectsFiltered);
-    }
+    setProjectsState(projectsFiltered);
   }, [typeProject]);
 
   return (
@@ -45,7 +42,11 @@ const Home = () => {
               <div id='projects' className='d-flex flex-column'>
                 <h2 className='mb-5'>Projects</h2>
                 <FilterProject />
-                {projectsState.map(project => <Projects key={project.id} {...project} />)}
+                <div className='row gap-5 justify-content-center'>
+                  {projectsState.map(project => <motion.div key={project.id} variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} transition={{ duration: 0.5 }} initial="hidden" animate="visible" className='mt-5 col-4'>
+                      <Projects key={project.id} {...project} />
+                    </motion.div>)}
+                </div>
               </div>
             </div>
           </section>

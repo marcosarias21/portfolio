@@ -19,43 +19,47 @@
     }
   }
   .htmlCard:hover {
-    box-shadow: $html-color 0px 3px 3px 0px;
+    box-shadow: $html-color 1px 3px 3px 1px;
     color: $html-color;
   }
   .cssCard:hover {
-    box-shadow: $css-color 0px 3px 3px 0px;
+    box-shadow: $css-color 1px 3px 3px 1px;
     color: $css-color;
   }
   .javascriptCard:hover {
-    box-shadow: $js-color 0px 3px 3px 0px;
+    box-shadow: $js-color 1px 3px 3px 1px;
     color: $js-color;
   }
+  .typescriptCard:hover {
+    box-shadow: $ts-color 1px 3px 3px 1px;
+    color: $ts-color;
+  }
   .reactCard:hover {
-    box-shadow: $react-color 0px 3px 3px 0px;
+    box-shadow: $react-color 1px 3px 3px 1px;
     color: $react-color;
   }
   .nodeCard:hover {
-    box-shadow: $node-color 0px 3px 3px 0px;
+    box-shadow: $node-color 1px 3px 3px 1px;
     color: $node-color;
   }
   .expressCard:hover {
-    box-shadow: rgba(20, 20, 20, 0.685) 0px 3px 3px 0px;
+    box-shadow: rgba(20, 20, 20, 0.685) 1px 3px 3px 1px;
     color: gray;
   }
   .mongoCard:hover {
-    box-shadow: $mongo-color 0px 3px 3px 0px;
+    box-shadow: $mongo-color 1px 3px 3px 1px;
     color: $mongo-color;
   }
   .firebaseCard:hover{
-    box-shadow: $firebase-color 0px 3px 3px 0px;
+    box-shadow: $firebase-color 1px 3px 3px 1px;
     color: $firebase-color;
   }
   .sassCard:hover{
-    box-shadow: $sass-color 0px 3px 3px 0px;
+    box-shadow: $sass-color 1px 3px 3px 1px;
     color: $sass-color;
   }
   .gitCard:hover {
-    box-shadow: $git-color 0px 3px 3px 0px;
+    box-shadow: $git-color 1px 3px 3px 1px;
     color: $git-color;
   }
 }

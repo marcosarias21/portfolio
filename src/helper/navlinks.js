@@ -6,27 +6,27 @@ import { FaGithub } from 'react-icons/fa';
 export const NavLinks = [
   {
     title: 'Home',
-    path: '/home#home',
+    path: '#home',
     icon: <BsFillHouseDoorFill className='mb-1' />,
   },
   {
     title: 'About',
-    path: '/home#about',
+    path: '#about',
     icon: <FaGithub className='mb-1' />,
   },
   {
     title: 'Skills',
-    path: '/home#skills',
+    path: '#skills',
     icon: <BsStars className='mb-1' />,
   },
   {
     title: 'Project',
-    path: '/home#projects',
+    path: '#projects',
     icon: <BsCast className='mb-1' />,
   },
   {
     title: 'Contact',
-    path: '/home#contact',
+    path: '#contact',
     icon: <BsChat className='mb-1' />,
   },
 ];

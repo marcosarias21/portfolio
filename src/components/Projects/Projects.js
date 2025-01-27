@@ -3,43 +3,27 @@ import { useState } from 'react';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
+import classNames from 'classnames';
+import { useThemeContext } from '../../provider/ThemeContext';
 
 const Projects = ({
-  title, description, githubBackend, github, demo, image, imageTwo, status, tools,
+  title, description, githubBackend, github, demo, image,
 }) => {
-  const [isEnter, setIsEnter] = useState(true);
+  const theme = useThemeContext();
 
   return (
-    <motion.div
-      initial={{ scale: 0, opacity: 0 }}
-      whileInView={{
-        scale: 1,
-        opacity: 1,
-        transition: {
-          ease: 'easeOut',
-          duration: 1.2,
-        },
-      }}
-      viewport={{ once: true }}
-      className='row justify-content-center my-2 p-3 border-section'>
-      <div className='col-sm-12 col-md-6 col-lg-6'>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className='d-flex flex-wrap'>
-          {tools.map((tool, i) => <span key={i} className='btn btn-outline-secondary m-1 tools'>{tool}</span>)}
+    <motion.div whileHover={{ scale: 1.02, boxShadow: '11px 11px 4px 1px' }} className={classNames('card', {
+      'bg-transparent text-white border-light': theme !== 'light',
+    })}>
+      <img src={image} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">{description.substring(0, 100).concat('...')}</p>
+        <div className='d-flex gap-2'>
+          <a href={github} className="btn btn-inherit"><FaGithub /></a>
+          {demo.length > 0 && <a href={demo} className="btn btn-inherit"><FaPager /></a>}
+          {githubBackend && <a href={githubBackend} className="btn btn-inherit"><AiOutlineDatabase /></a>}
         </div>
-        <p className='fw-bold'>Status:{status === 'Completed' ? <span className='text-success'> Completed </span> : <span className='text-danger'> In progress... </span>}
-        </p>
-        <div>
-          <a target='blank' href={github}><FaGithub className='svg-size' /></a>
-          {githubBackend ? <a target='blank' href={githubBackend}> <AiOutlineDatabase className='svg-size' /></a> : null }
-          <a target='blank' href={demo}><FaPager className='ms-2 svg-size text-danger' /></a>
-        </div>
-      </div>
-      <div className='d-none d-sm-block d-sm-none d-md-block col-md-6 col-lg-6'>
-        <a target='blank' href={demo}>
-        <img className='img-project-size' onMouseEnter={() => setIsEnter(false)} onMouseLeave={() => setIsEnter(true)} src={isEnter ? image : imageTwo} />
-        </a>
       </div>
     </motion.div>
   );

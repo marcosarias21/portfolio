@@ -66,6 +66,6 @@ export const projects = [
     status: 'Completed',
     tools: ['Expo', 'React Native Paper', 'Stack Navigator', 'Axios', 'Redux-Toolkit'],
     github: 'https://github.com/marcosarias21/ecommerce-r-native',
-    demo: 'https://github.com/marcosarias21/ecommerce-r-native',
+    demo: '',
   },
 ];
