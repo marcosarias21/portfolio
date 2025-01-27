@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiOutlineDownload } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
+import CV from '../../assets/pdf/MarcosAriasCV.pdf';
 import { useThemeContext } from '../../provider/ThemeContext';
 import { Container } from '../Container';
 import { ContainerMeImg } from '../ContainerMeImg';
@@ -38,7 +39,7 @@ const About = () => {
             viewport={{ once: true }}>
             <a href="https://github.com/marcosarias21" className='btn'> <AiFillGithub /></a>
             <a href="https://www.linkedin.com/in/marcos-ar/" className='btn text-primary'> <FaLinkedinIn /></a>
-            <button className={theme === 'light' ? 'btn btn-outline-secondary' : 'btn btn-outline-light'} > Download resume <AiOutlineDownload className='svg-size' /> </button>
+            <a href={CV} target='blank' className={theme === 'light' ? 'btn btn-outline-dark' : 'btn btn-outline-light'} > Download resume <AiOutlineDownload className='svg-size' /> </a>
           </motion.div>
         </div>
         <ContainerMeImg />
