@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import { useThemeContext } from '../../provider/ThemeContext';
 
 const Projects = ({
-  title, description, githubBackend, github, demo, image,
+  title, description, githubBackend, github, demo, image, status,
 }) => {
   const theme = useThemeContext();
 
@@ -20,9 +20,14 @@ const Projects = ({
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description.substring(0, 100).concat('...')}</p>
         <div className='d-flex gap-2'>
-          <a href={github} className="btn btn-inherit"><FaGithub /></a>
-          {demo.length > 0 && <a href={demo} className="btn btn-inherit"><FaPager /></a>}
-          {githubBackend && <a href={githubBackend} className="btn btn-inherit"><AiOutlineDatabase /></a>}
+          <div>
+            <a href={github} className="btn btn-inherit"><FaGithub /></a>
+            {demo.length > 0 && <a href={demo} target='blank' className="btn btn-inherit"><FaPager /></a>}
+            {githubBackend && <a href={githubBackend} className="btn btn-inherit"><AiOutlineDatabase /></a>}
+          </div>
+          <div className='mt-2'>
+            <p>State: {status}</p>
+          </div>
         </div>
       </div>
     </motion.div>

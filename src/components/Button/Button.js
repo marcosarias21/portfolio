@@ -5,7 +5,7 @@ const Button = ({
   text, type, value, className,
 }) => {
   return (
-    <a href='/home#contact' className='text-decoration-none'>
+    <a href='#contact' className='text-decoration-none'>
       <motion.button
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}

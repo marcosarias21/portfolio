@@ -1,0 +1,11 @@
+export const EXAMPLES = [{ text: 'Hola', label: 'Intro' }, { text: 'Como estas?', label: 'Intro' }, { text: 'Quien sos?', label: 'Intro' }, { text: 'Tengo una oferta para vos', label: 'Contacto' }, { text: 'Por donde te puedo contactar?', label: 'Contacto' }, { text: 'Tengo un trabajo para vos', label: 'Contacto' }, { text: 'Con que tecnologias trabajas?', label: 'Experiencia' }, { text: 'Sabes inglés?', label: 'Intro' }, { text: 'Como es tu LinkedIn?', label: 'Contacto' }, { text: 'Como es tu Github?', label: 'Contacto' }, { text: 'Experiencia', label: 'Experiencia' }, { text: 'Donde estudiaste?', label: 'Experiencia' }];
+
+export const QUESTIONS = EXAMPLES?.map(example => example.text);
+
+export const ANSWERS = {
+  Intro: '¡Hola! Soy Marcos Arias, tengo 24 años y soy Frontend Developer. Trabajo con React usando JavaScript y TypeScript en el frontend, y tengo experiencia en backend con MongoDB, SQL y GraphQL. Actualmente, estoy en búsqueda de nuevas oportunidades laborales.',
+  Experiencia: 'Tengo experiencia en React con JavaScript, utilizando Zustand para el manejo de estados globales, Material UI para la interfaz de usuario y Framer Motion para animaciones.  En el backend, trabajo con SQL, MongoDB, GraphQL y Apollo para la gestión de datos y APIs eficientes. Además, poseo un nivel de inglés intermedio, lo que me permite comunicarme eficazmente en contextos técnicos. 🚀',
+  Contacto: (<p className="text-white">Podes contactarme en mi linkedin : <a href="https://www.linkedin.com/in/marcos-ar/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/marcos-ar/</a>.Mi GitHub: <a href="https://github.com/marcosarias21" target="_blank" rel="noreferrer">https://github.com/marcosarias21/</a></p>),
+  Estudios: 'En 2019 comencé a aprender programación de forma autodidacta y a través de cursos, enfocándome en el desarrollo web y nuevas tecnologías. Más tarde, me gradué de la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional (UTN), consolidando mis conocimientos y experiencia en el área.',
+  Hobbies: 'Me gusta jugar a la PC, explorando distintos juegos y géneros. También disfruto hacer deporte, ya que me ayuda a mantenerme activo y equilibrar el tiempo frente a la pantalla. 🚀🎮🏋️‍♂️',
+};
