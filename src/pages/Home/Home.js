@@ -16,6 +16,7 @@ import { InnerWrapper } from '../../components/InnerWrapper';
 import { FilterProject } from '../../components/FilterProject';
 import './home.scss';
 import projectContext from '../../provider/FilterProjectContext';
+import { ChatBot } from '../../components/Chatbot';
 
 const Home = () => {
   const theme = useThemeContext();
@@ -37,13 +38,13 @@ const Home = () => {
           <Hero theme={theme} />
           <About theme={theme} />
           <Skills theme={theme} />
-          <section>
+          <section className='project-container'>
             <div className={theme === 'light' ? 'scroll-project' : 'scroll-project-dark' } id='project'>
               <div id='projects' className='d-flex flex-column'>
                 <h2 className='mb-5'>Projects</h2>
                 <FilterProject />
-                <div className='row gap-5 justify-content-center'>
-                  {projectsState.map(project => <motion.div key={project.id} variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} transition={{ duration: 0.5 }} initial="hidden" animate="visible" className='mt-5 col-4'>
+                <div className='row gap-0 justify-content-center'>
+                  {projectsState.map(project => <motion.div key={project.id} variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} transition={{ duration: 0.5 }} initial="hidden" animate="visible" className='mt-5 col-sm-12 col-md-6 col-lg-5'>
                       <Projects key={project.id} {...project} />
                     </motion.div>)}
                 </div>
@@ -53,6 +54,7 @@ const Home = () => {
           <ContactForm theme={theme}/>
         </InnerWrapper>
         <Footer theme={theme} />
+        <ChatBot />
       </OuterWrapper>
     </section>
   );

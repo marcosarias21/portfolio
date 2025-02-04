@@ -1,5 +1,6 @@
 @import '../../styles/global.scss';
 .bg-form-light{
+  box-shadow: 2px 2px 20px 0px;
   margin-bottom: 100px;
   background: white;
   height: auto;
@@ -28,6 +29,7 @@
 
 @media (min-width: 319px) and (max-width: 359px) {
   .bg-form-light{
+    box-shadow: none;
     padding: 10px;
     background-color: inherit;
     .contact-title{
@@ -38,6 +40,7 @@
 
 @media (min-width: 360px) and (max-width: 760px) {
   .bg-form-light{
+    box-shadow: none;
     padding: 0px;
     background-color: inherit;
     .contact-title{

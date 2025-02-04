@@ -5,6 +5,7 @@
     letter-spacing: 1px;
   }
   .container-hero{
+    box-shadow: 2px 2px 20px 0px;
     background: white;
     border-radius: 50px;
     .desc-content {
@@ -14,6 +15,7 @@
         border: 0px solid $my-color;
       }
       .img-media-size{
+        border-radius: 50px;
         height: 546px;
         width: 546px;
       }
@@ -31,12 +33,14 @@
   
   @media (max-width: 359px) {
     .container-hero{
+      box-shadow: none;
       padding: 12px;
       background-color: inherit;
     }
   }
   @media (min-width: 360px) and (max-width: 760px) {
     .container-hero{
+      box-shadow: none;
       padding: 18px;
       background-color: inherit;
     }
@@ -44,11 +48,13 @@
   @media (min-width: 700px) and (max-width: 1420px){
     .img-media-size{
       width: 100%;
+      border-radius: 50px;
     }
   }
   
   @media (min-width: 1421PX) and (max-width: 1920PX){
     .img-media-size{
+      border-radius: 50px;      
       width: 100%;
     }
   }
