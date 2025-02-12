@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import { FaGithub, FaPager } from 'react-icons/fa';
 import './project.scss';
@@ -26,7 +25,7 @@ const Projects = ({
             {githubBackend && <a href={githubBackend} className="btn btn-inherit"><AiOutlineDatabase /></a>}
           </div>
           <div className='mt-2'>
-            <p>State: {status}</p>
+            <p className={classNames({ 'text-success': status === 'Completed', 'text-danger': status === 'In progress...' })}>Status: {status}</p>
           </div>
         </div>
       </div>
