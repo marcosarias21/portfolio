@@ -4,6 +4,7 @@ import weather from '../assets/images/weather.png';
 import reserve from '../assets/images/reserveorder.png';
 import mercadots from '../assets/images/mercadots.png';
 import blog from '../assets/images/Blog.png';
+import tateti from '../assets/images/tateti.png';
 
 export const projects = [
   {
@@ -75,7 +76,7 @@ export const projects = [
     demo: 'https://mercadots.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     image: blog,
     type: 'Full Stack',
     title: 'Blog APP',
@@ -85,5 +86,16 @@ export const projects = [
     github: 'https://github.com/marcosarias21/blog-app',
     githubBackend: 'https://github.com/marcosarias21/blog-server-graphql',
     demo: '',
+  },
+  {
+    id: 8,
+    image: tateti,
+    type: 'Only React',
+    title: 'TaTeTi',
+    description: 'Simple game to practice tailwind',
+    status: 'Completed',
+    tools: ['React', 'Javascript', 'Typescript', 'Tailwind'],
+    github: 'https://github.com/marcosarias21/ta-te-ti',
+    demo: 'https://tatetimarcosar.netlify.app/',
   },
 ];
